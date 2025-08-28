@@ -3,7 +3,7 @@ const q = document.getElementById("q");
 const pageSizeSel = document.getElementById("pageSize");
 
 // make 25 the default shown/used on load
-pageSizeSel.value = "25"; // 👈 add this line
+pageSizeSel.value = "25";
 
 const thead = document.getElementById("thead");
 const tbody = document.getElementById("tbody");
