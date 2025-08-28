@@ -1,0 +1,271 @@
+/* ----- HERO (single light style) ----- */
+.hero {
+	background: #fff;
+	color: #111;
+	padding: clamp(48px, 8vw, 120px) 0;
+}
+.hero__inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+.hero_head {
+	font-weight: 800;
+	line-height: 1.05;
+	letter-spacing: -0.01em;
+	font-size: 3.2rem;
+	margin: 0 0 12px;
+}
+.hero_deck {
+	font-size: clamp(16px, 2.2vw, 22px);
+	line-height: 1.5;
+	max-width: 60ch;
+	margin: 0 0 12px;
+	opacity: 0.9;
+}
+.hero__note {
+	font-size: 13px;
+	letter-spacing: 0.01em;
+	opacity: 0.7;
+	margin: 0 0 20px;
+}
+.hero__cta {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid currentColor;
+	padding: 10px 14px;
+	border-radius: 999px;
+	font-weight: 600;
+}
+.hero__cta:hover,
+.hero__cta:focus {
+	transform: translateY(-1px);
+}
+
+/* ---------- Global ---------- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* ---------- Layout (left rail = toggle + columns; right rail = builder + map/table) ---------- */
+.layout {
+	max-width: 1544px;
+	margin: 0 auto;
+	padding: 0 64px 40px; /* equal gutters */
+	display: grid;
+	grid-template-columns: 340px 1fr;
+	gap: 24px;
+	align-items: start;
+	overflow-x: clip; /* prevent right overflow */
+}
+
+/* Left rail */
+.left-rail {
+	position: sticky;
+	top: 16px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+/* Right rail */
+.right-rail {
+	grid-column: 2 / 3; /* end at grid edge -> keeps right gutter equal */
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	min-width: 0; /* allow shrinking; avoids overflow from wide children */
+}
+
+/* ---------- View toggle ---------- */
+.view-toggle {
+	display: flex;
+	gap: 0.5rem;
+}
+.btn {
+	height: 36px;
+	padding: 0 12px;
+	border-radius: 8px;
+	font-weight: 700;
+	border: 1px solid #111;
+	background: #fff;
+}
+.btn--ghost {
+	background: #fff;
+	color: #111;
+	border-color: #ddd;
+}
+.is-active {
+	border-color: #111;
+}
+
+/* ---------- Column picker ---------- */
+.filters {
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	padding: 16px;
+}
+.box__title {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin: 0 0 8px;
+	opacity: 0.8;
+}
+.col-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 6px;
+	max-height: 320px;
+	overflow: auto;
+}
+.chk {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	font-size: 14px;
+}
+.chk input {
+	width: 16px;
+	height: 16px;
+}
+
+/* ---------- Query Builder ---------- */
+.query-builder {
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	padding: 12px 16px;
+}
+.filters__rows {
+	display: grid;
+	gap: 8px;
+	margin-top: 4px;
+}
+.frow {
+	display: grid;
+	grid-template-columns: minmax(0, 140px) 110px minmax(0, 1fr) 34px;
+	gap: 6px;
+	align-items: center;
+}
+.frow > * {
+	min-width: 0;
+}
+.frow select,
+.frow input {
+	width: 100%;
+	height: 32px;
+	padding: 4px 8px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+.frow .rm {
+	width: 34px;
+	height: 32px;
+	border: 1px solid #ddd;
+	background: #fafafa;
+	border-radius: 6px;
+}
+.filters__actions {
+	display: flex;
+	gap: 8px;
+	margin-top: 12px;
+}
+
+/* ---------- Map card ---------- */
+.map-card {
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	padding: 0;
+	width: 100%;
+}
+.map {
+	width: 100%;
+	height: 60vh;
+}
+.hidden {
+	display: none !important;
+}
+
+/* ---------- Table card ---------- */
+.table-card .table-wrap {
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+	width: 100%;
+}
+.table-wrap {
+	padding: 0 16px 40px;
+}
+.table-scroll {
+	overflow-x: auto;
+	padding: 0 16px;
+}
+
+#toolbar {
+	padding: 16px 16px 0;
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+}
+
+/* ---------- Table ---------- */
+#results {
+	width: max-content;
+	min-width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+#results th,
+#results td {
+	white-space: nowrap;
+	padding: 0.5rem 0.75rem;
+	border-bottom: 1px solid #eee;
+	text-align: left;
+}
+#results thead th {
+	position: sticky;
+	top: 0;
+	background: #fff;
+	z-index: 1;
+	cursor: pointer;
+	font-weight: 700;
+}
+#results tbody tr:nth-child(odd) {
+	background: #fafafa;
+}
+th .sort {
+	font-size: 0.85em;
+	opacity: 0.6;
+	margin-left: 0.25rem;
+}
+
+#pagination {
+	padding: 10px 16px 16px;
+	display: flex;
+	gap: 0.75rem;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 960px) {
+	.layout {
+		grid-template-columns: 1fr;
+		max-width: 100%;
+		padding: 0 24px 40px;
+	}
+	.left-rail {
+		position: static;
+	}
+	.right-rail {
+		grid-column: auto;
+	}
+}

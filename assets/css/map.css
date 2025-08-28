@@ -1,0 +1,132 @@
+/* Bihar AC Deletions – Map view */
+
+/* ----- Container / toolbar ----- */
+.map-card {
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 12px;
+	padding: 16px;
+}
+.map-card.hidden {
+	display: none;
+}
+
+.map-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	align-items: center;
+	padding: 12px;
+	border: 1px solid #e5e7eb;
+	border-radius: 10px;
+	background: #fafafa;
+}
+.map-metric {
+	display: flex;
+	gap: 12px;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.map-metric legend {
+	font-weight: 600;
+	margin-right: 6px;
+}
+.map-filter {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+.map-filter label {
+	font-weight: 600;
+	font-size: 14px;
+}
+.map-filter select {
+	padding: 8px 10px;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.map-reset {
+	margin-left: auto;
+	padding: 8px 12px;
+	border: 1px solid #9ca3af;
+	border-radius: 8px;
+	background: #f3f4f6;
+	cursor: pointer;
+}
+.map-reset:hover {
+	background: #e5e7eb;
+}
+
+.map-status {
+	margin: 14px 0;
+	padding: 10px 12px;
+	background: #eaf2fb;
+	border-left: 4px solid #3b82f6;
+	border-radius: 6px;
+	font-weight: 600;
+	color: #1f2937;
+}
+
+/* ----- SVG map ----- */
+.map-wrap {
+	position: relative;
+	width: 100%;
+}
+
+/* Force a real map height (many global styles set SVGs to ~150px) */
+#mapCard #biharMap {
+	width: 100%;
+	height: 520px !important;
+	display: block;
+}
+
+.map-acs {
+	stroke: #9ca3af;
+	stroke-width: 0.6;
+}
+.map-acs .no-data {
+	fill: #f3f4f6;
+}
+
+/* ----- Tooltip ----- */
+.map-tooltip {
+	position: absolute;
+	pointer-events: none;
+	background: #111827;
+	color: #fff;
+	font-size: 13px;
+	padding: 8px 10px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- Legend ----- */
+.map-legend {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	flex-wrap: wrap;
+}
+.map-legend-title {
+	font-weight: 700;
+}
+.map-legend-steps {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+.map-legend-swatch {
+	width: 24px;
+	height: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.map-legend-labels {
+	display: flex;
+	gap: 12px;
+	font-size: 12px;
+	color: #374151;
+}
