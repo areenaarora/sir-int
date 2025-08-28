@@ -306,6 +306,32 @@ th .sort {
 	align-items: center;
 }
 
+/* --- Credits block --- */
+.credits {
+	background: #fff;
+	color: #111;
+	border-top: 1px solid #e5e7eb;
+	border-bottom: 1px solid #e5e7eb; /* optional, for a line below too */
+	padding: clamp(28px, 4vw, 64px) 0;
+	margin-top: clamp(24px, 4vw, 56px);
+}
+.credits__inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 clamp(16px, 3vw, 24px);
+}
+.credits__title {
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing: 0.01em;
+	margin: 0 0 14px 0;
+}
+.credits__names {
+	font-size: 1rem;
+	line-height: 1.8;
+	margin: 0;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
 	.layout {
