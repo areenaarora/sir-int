@@ -10,9 +10,13 @@ const tbody = document.getElementById("tbody");
 const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 const pageInfo = document.getElementById("pageInfo");
-// ...
 
-// ----- State -----
+// NEW: query-builder DOM (ensure these exist in HTML)
+const colList = document.getElementById("colList");
+const filterRowsEl = document.getElementById("filterRows");
+const btnAddFilter = document.getElementById("btnAddFilter");
+
+// ===== State =====
 let rows = [];
 let headers = [];
 let numericCols = new Set();
@@ -23,6 +27,10 @@ let pageSize = parseInt(pageSizeSel.value, 10); // now reads 25
 let sortKey = null;
 let sortDir = "asc";
 
+// NEW: categorical columns use dropdowns
+const CAT_COLS = new Set(["Age group", "Reason for deletion"]);
+let UNIQUES = {}; // filled after CSV load
+
 // ===== Helpers =====
 const numericLikeRE = /^\s*[-+]?(\d{1,3}(,\d{3})*|\d+)(\.\d+)?\s*%?\s*$/;
 // parse numbers like 1,234  -56.7  12%  3.14  but NOT "18–29"
@@ -30,7 +38,6 @@ function toNumber(v) {
 	if (v == null) return NaN;
 	const s = String(v).trim();
 	if (!numericLikeRE.test(s)) return NaN;
-	// drop everything except digits, +-.eE and decimal point/commas/percent
 	const cleaned = s.replace(/,/g, "").replace(/%$/, "");
 	const n = parseFloat(cleaned);
 	return Number.isFinite(n) ? n : NaN;
@@ -90,6 +97,16 @@ async function init() {
 
 	selectedCols = headers.slice(); // default: show all
 	inferNumericCols();
+
+	// Build unique lists for categorical dropdowns
+	UNIQUES = {};
+	for (const col of CAT_COLS) {
+		if (headers.includes(col)) {
+			UNIQUES[col] = Array.from(
+				new Set(rows.map(r => String(r[col] ?? "").trim()).filter(Boolean)),
+			).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+		}
+	}
 
 	buildColumnPicker();
 	buildHeader();
@@ -164,33 +181,23 @@ function addFilterRow(init = {}) {
       ${headers.map(h => `<option value="${h}">${h}</option>`).join("")}
     </select>
     <select class="f-op"></select>
-    <input class="f-val" type="text" placeholder="Value">
+    <span class="f-val-wrap"></span>
     <button class="rm" title="Remove">×</button>
   `;
 	filterRowsEl.appendChild(row);
 
 	const colSel = row.querySelector(".f-col");
 	const opSel = row.querySelector(".f-op");
-	const valInp = row.querySelector(".f-val");
+	const valWrap = row.querySelector(".f-val-wrap");
 
 	if (init.col) colSel.value = init.col;
-	setOps(opSel, colSel.value);
-	if (init.op) opSel.value = init.op;
-	if (init.val != null) valInp.value = init.val;
-
-	// auto-apply on any change
-	colSel.addEventListener("change", () => {
-		setOps(opSel, colSel.value);
-		applySearchAndFilters();
-	});
-	opSel.addEventListener("change", applySearchAndFilters);
-	valInp.addEventListener("input", debounce(applySearchAndFilters, 200));
-	row.querySelector(".rm").addEventListener("click", () => {
-		row.remove();
-		applySearchAndFilters();
-	});
 
 	function setOps(selectEl, col) {
+		// categorical -> lock to equality; else full set
+		if (CAT_COLS.has(col)) {
+			selectEl.innerHTML = `<option value="=">is</option>`;
+			return;
+		}
 		const isNum = numericCols.has(col);
 		const ops = isNum
 			? [
@@ -210,15 +217,46 @@ function addFilterRow(init = {}) {
 			  ];
 		selectEl.innerHTML = ops.map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
 	}
+
+	function renderValueControl(col, presetVal) {
+		if (CAT_COLS.has(col)) {
+			const opts = (UNIQUES[col] || []).map(v => `<option value="${v}">${v}</option>`).join("");
+			valWrap.innerHTML = `<select class="f-val">${opts}</select>`;
+			setOps(opSel, col);
+			if (presetVal) row.querySelector(".f-val").value = presetVal;
+		} else {
+			valWrap.innerHTML = `<input class="f-val" type="text" placeholder="Value">`;
+			setOps(opSel, col);
+			if (presetVal != null) row.querySelector(".f-val").value = presetVal;
+		}
+	}
+
+	// Initial render
+	renderValueControl(colSel.value, init.val);
+
+	// Apply initial operator if provided (only non-categorical)
+	if (init.op && !CAT_COLS.has(colSel.value)) opSel.value = init.op;
+
+	// auto-apply on any change
+	colSel.addEventListener("change", () => {
+		renderValueControl(colSel.value);
+		applySearchAndFilters();
+	});
+	opSel.addEventListener("change", applySearchAndFilters);
+	row.addEventListener("input", debounce(applySearchAndFilters, 200));
+	row.querySelector(".rm").addEventListener("click", () => {
+		row.remove();
+		applySearchAndFilters();
+	});
 }
 
 function collectFilters() {
-	const rows = [...filterRowsEl.querySelectorAll(".frow")];
-	return rows
+	const rowsEls = [...filterRowsEl.querySelectorAll(".frow")];
+	return rowsEls
 		.map(r => ({
 			col: r.querySelector(".f-col").value,
 			op: r.querySelector(".f-op").value,
-			val: r.querySelector(".f-val").value,
+			val: (r.querySelector(".f-val") || {}).value ?? "",
 		}))
 		.filter(f => f.val !== "");
 }
@@ -350,13 +388,12 @@ function debounce(fn, ms) {
 }
 
 // TOGGLING TABLE/MAP VIEW
-
 const btnMapView = document.getElementById("btnMapView");
 const btnTableView = document.getElementById("btnTableView");
 const tableCard = document.querySelector(".table-card");
 const mapCard = document.getElementById("mapCard");
 
-// NEW: refs to the boxes you want to hide in map view
+// refs to the boxes you want to hide in map view
 const filtersAside = document.getElementById("filters");
 const queryBuilder = document.querySelector(".query-builder");
 
@@ -367,7 +404,7 @@ function setView(view) {
 	tableCard.classList.toggle("hidden", !isTable);
 	mapCard.classList.toggle("hidden", isTable);
 
-	// NEW: hide filters + query builder in map view
+	// hide filters + query builder in map view
 	filtersAside.classList.toggle("hidden", !isTable);
 	queryBuilder.classList.toggle("hidden", !isTable);
 	filtersAside.setAttribute("aria-hidden", String(!isTable));

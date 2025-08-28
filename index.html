@@ -228,7 +228,7 @@
 
 		<main id="data-table">
 			<div class="layout">
-				<!-- LEFT rail: toggle + columns -->
+				<!-- LEFT rail: toggle + legend + columns -->
 				<section class="left-rail">
 					<div class="view-toggle" id="viewToggle">
 						<button
@@ -244,6 +244,9 @@
 						</button>
 					</div>
 
+					<!-- Legend relocated here -->
+					<div id="mapLegend" class="map-legend"></div>
+
 					<aside class="filters" id="filters">
 						<h3 class="box__title">Select columns</h3>
 						<div id="colList" class="col-list"></div>
@@ -253,7 +256,7 @@
 				<!-- RIGHT rail: query builder + map/table -->
 				<section class="right-rail">
 					<section class="query-builder">
-						<h3 class="box__title">Filters</h3>
+						<h3 class="box__title">Query builder</h3>
 						<div id="filterRows" class="filters__rows"></div>
 						<div class="filters__actions">
 							<button id="btnAddFilter" class="btn btn--ghost">+ Add Filter</button>
@@ -290,8 +293,6 @@
 							<svg id="biharMap" role="img" aria-label="Bihar AC deletions choropleth"></svg>
 							<div id="mapTooltip" class="map-tooltip" hidden></div>
 						</div>
-
-						<div id="mapLegend" class="map-legend"></div>
 					</section>
 
 					<!-- Table (default visible) -->

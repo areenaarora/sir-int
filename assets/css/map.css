@@ -91,6 +91,30 @@
 	fill: #f3f4f6;
 }
 
+/* legend block below toggle */
+#mapLegend {
+	margin-top: 12px;
+	padding: 12px;
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	font-size: 14px;
+}
+.map-legend-title {
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.map-legend-steps {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.map-legend-swatch {
+	width: 24px;
+	height: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 /* ----- Tooltip ----- */
 .map-tooltip {
 	position: absolute;

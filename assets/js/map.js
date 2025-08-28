@@ -1,19 +1,22 @@
 /* Bihar AC Deletions Choropleth (D3 v7)
    Works with GeoJSON or TopoJSON.
-   HTML expected IDs:
-   #biharMap (svg), #mapLegend, #mapStatus, #mapReason, #mapAgeGroup (optional),
-   inputs[name="metric"] (values: total | ratio), #mapReset, #mapTooltip
 
-   initDeletionMap({
-     csvUrl: "data/out.csv",
-     geoUrl: "data/bihar_acs.json",
-     topoObject: "bihar_acs" // (only for TopoJSON; optional if the first object is correct)
-   })
+   Expected HTML IDs (already in your page):
+   - #biharMap (svg), #mapLegend, #mapStatus, #mapReason, #mapAgeGroup (optional),
+     inputs[name="metric"] (values: total | ratio), #mapReset, #mapTooltip
+
+   Initialize once (in index.html, after loading this file):
+     initDeletionMap({
+       csvUrl: "assets/data/data.csv",
+       geoUrl: "assets/data/bihar_acs.json",
+       topoObject: "bihar_acs" // (optional if first object is the right one)
+     });
 */
 (function () {
+	// Column headers expected in CSV (must match exactly)
 	const COLS = {
 		acName: "Assembly constituency name",
-		acNo: "Assembly constituency number",
+		acNo: "Assembly constituency number", // optional; only used for tooltip if present in topo
 		total: "Total deletions",
 		reason: "Reason for deletion",
 		male: "Male deletions",
@@ -30,14 +33,14 @@
 		"#e34a33",
 		"#b30000",
 	];
-	const COLORS_RATIO = [
-		"#f7fcf5",
-		"#e5f5e0",
-		"#c7e9c0",
-		"#a1d99b",
-		"#74c476",
-		"#31a354",
-		"#006d2c",
+	// Fixed, diverging bins for Female vs Male % (signed percentage points, + = more female)
+	const COLORS_RATIO_DIVERGE = [
+		"#b30000", // >10% more female
+		"#fc8d59", // 5–10% more female
+		"#fdd49e", // 0–5% more female
+		"#c7e9c0", // 0–5% more male
+		"#74c476", // 5–10% more male
+		"#006d2c", // >10% more male
 	];
 
 	const fmt = x => (x == null || !isFinite(+x) ? "–" : d3.format(",")(x));
@@ -48,18 +51,31 @@
 		return keys.find(k => /age\s*group/i.test(k)) || null;
 	};
 
-	// FIX #1: allow passing a specific TopoJSON object name
+	// -------- Topo helpers --------
 	function topoToFeatures(topo, objName) {
 		const name = objName || Object.keys(topo.objects)[0];
+		if (!topo.objects[name]) {
+			console.warn("[map] Topo object", name, "not found. Available:", Object.keys(topo.objects));
+		}
 		return topojson.feature(topo, topo.objects[name]).features;
 	}
-
 	const findAcNoKey = features => {
 		const probe = features[0]?.properties || {};
-		return Object.keys(probe).find(k => /(^|_)ac[^a-z0-9]*no/i.test(k)) || Object.keys(probe)[0];
+		return Object.keys(probe).find(k => /(^|_)ac[^a-z0-9]*no/i.test(k)) || null;
+	};
+	const findAcNameKey = features => {
+		const probe = features[0]?.properties || {};
+		return (
+			Object.keys(probe).find(k => /^ac_?name$/i.test(k)) ||
+			Object.keys(probe).find(k => /name/i.test(k)) ||
+			null
+		);
 	};
 
 	window.initDeletionMap = function initDeletionMap(config) {
+		const t0 = performance.now();
+		console.log("[map] initDeletionMap config:", config);
+
 		const sel = {
 			svg: d3.select("#biharMap"),
 			legend: d3.select("#mapLegend"),
@@ -72,6 +88,14 @@
 			tooltip: d3.select("#mapTooltip"),
 		};
 
+		if (sel.svg.empty()) {
+			console.error("[map] #biharMap <svg> not found in DOM.");
+			return;
+		}
+		if (sel.legend.empty()) {
+			console.warn("[map] #mapLegend not found; legend will not render.");
+		}
+
 		const state = {
 			metric: "total",
 			reason: "All reasons",
@@ -79,7 +103,8 @@
 			data: [],
 			hasAge: false,
 			features: null,
-			acKeyInGeo: null,
+			acKeyInGeo: null, // number key in topo (optional)
+			acNameKeyInGeo: null, // name key in topo (USED FOR JOIN)
 			size: { w: 1100, h: 680, margin: 8 },
 		};
 
@@ -90,9 +115,26 @@
 
 		Promise.all([d3.csv(config.csvUrl, d3.autoType), d3.json(config.geoUrl)])
 			.then(([rows, geo]) => {
+				console.log("[map] CSV rows:", rows.length, "first row:", rows[0]);
+				console.log(
+					"[map] Geo type:",
+					geo?.type,
+					"topo objects:",
+					geo?.objects ? Object.keys(geo.objects) : null,
+				);
+
+				// Validate CSV headers before proceeding
+				const required = [COLS.acName, COLS.total, COLS.reason, COLS.male, COLS.female, COLS.ratio];
+				const missing = required.filter(k => !(k in (rows[0] || {})));
+				if (missing.length) {
+					console.error("[map] Missing columns in CSV:", missing);
+					sel.status.text("CSV does not contain expected headers. See console for details.");
+					return;
+				}
+
+				// Coerce numeric fields; keep names as-is
 				state.data = rows.map(r => ({
 					...r,
-					[COLS.acNo]: +r[COLS.acNo],
 					[COLS.total]: toNum(r[COLS.total]),
 					[COLS.male]: toNum(r[COLS.male]),
 					[COLS.female]: toNum(r[COLS.female]),
@@ -104,21 +146,50 @@
 					COLS.age = ageCol;
 					state.hasAge = true;
 				}
+				console.log("[map] Age column detected:", state.hasAge ? COLS.age : "(none)");
 
-				// FIX #2: use the specified TopoJSON object if provided
+				// Features (Topo or GeoJSON)
+				if (!geo) {
+					console.error("[map] GeoJSON/TopoJSON not loaded.");
+					sel.status.text("Map file not found.");
+					return;
+				}
 				state.features =
 					geo.type === "Topology" ? topoToFeatures(geo, config.topoObject) : geo.features;
 
-				state.acKeyInGeo = findAcNoKey(state.features);
+				if (!state.features || !state.features.length) {
+					console.error("[map] No features parsed from map file.");
+					sel.status.text("No map features found.");
+					return;
+				}
+
+				state.acKeyInGeo = findAcNoKey(state.features); // may be null
+				state.acNameKeyInGeo = findAcNameKey(state.features); // REQUIRED for name join
+				if (!state.acNameKeyInGeo) {
+					console.error(
+						"[map] Could not detect AC name property in TopoJSON feature properties:",
+						state.features[0]?.properties,
+					);
+					sel.status.text("Could not detect AC name in map file.");
+					return;
+				}
+				console.log(
+					"[map] Joining by topo name key:",
+					state.acNameKeyInGeo,
+					"number key:",
+					state.acKeyInGeo,
+				);
 
 				buildFilters();
 				drawMap();
 				wireEvents();
 				update();
+
+				console.log("[map] init complete in", Math.round(performance.now() - t0), "ms");
 			})
 			.catch(err => {
 				console.error("Map load error:", err);
-				sel.status.text("Map load error. Check data/geo paths.");
+				sel.status.text("Map load error. Check data/geo paths (see console).");
 			});
 
 		function buildFilters() {
@@ -194,6 +265,7 @@
 		}
 
 		function update() {
+			// Filter by dropdowns
 			const rows = state.data.filter(d => {
 				const okR = state.reason === "All reasons" || d[COLS.reason] === state.reason;
 				const okA =
@@ -201,6 +273,7 @@
 				return okR && okA;
 			});
 
+			// GROUP BY AC NAME (exact match with topo names)
 			const byAc = d3.rollups(
 				rows,
 				v => ({
@@ -210,42 +283,43 @@
 					ratio: computeRatio(v),
 					name: v[0]?.[COLS.acName],
 				}),
-				d => d[COLS.acNo],
+				d => (d[COLS.acName] == null ? null : String(d[COLS.acName]).trim()),
 			);
 			const mapAc = new Map(byAc);
 
-			function computeRatio(v) {
-				const provided = v.every(d => Number.isFinite(d[COLS.ratio]));
-				if (provided) {
-					const w = d3.sum(v, d => (Number.isFinite(d[COLS.ratio]) ? d[COLS.male] : 0));
-					return w > 0
-						? d3.sum(v, d => (d[COLS.ratio] || 0) * (d[COLS.male] || 0)) / w
-						: d3.mean(v, d => d[COLS.ratio]);
-				}
-				const m = d3.sum(v, d => d[COLS.male]);
-				const f = d3.sum(v, d => d[COLS.female]);
-				return m > 0 ? (f / m) * 100 : NaN;
-			}
-
 			const values = [];
 			for (const f of state.features) {
-				const ac = +f.properties[state.acKeyInGeo];
-				const rec = mapAc.get(ac);
+				const acName = String(f.properties[state.acNameKeyInGeo] ?? "").trim();
+				const rec = mapAc.get(acName);
 				f.__meta = rec || null;
 				f.__val = rec ? (state.metric === "total" ? rec.total : rec.ratio) : null;
 				if (Number.isFinite(f.__val)) values.push(f.__val);
 			}
 
-			const color =
-				state.metric === "total"
-					? d3.scaleQuantile().domain(values).range(COLORS_TOTAL)
-					: d3.scaleQuantile().domain(values).range(COLORS_RATIO);
+			if (!values.length) {
+				console.warn("[map] No numeric values for current filters; map will be empty.");
+			}
+
+			// Color scales
+			let color;
+			if (state.metric === "total") {
+				// quantile ramp for totals
+				color = d3.scaleQuantile().domain(values).range(COLORS_TOTAL);
+			} else {
+				// fixed thresholds for Female vs Male %
+				// bins: (-∞,-10), [-10,-5), [-5,0), [0,5), [5,10), [10,∞)
+				color = d3.scaleThreshold().domain([-10, -5, 0, 5, 10]).range(COLORS_RATIO_DIVERGE);
+			}
 
 			gAcs
 				.selectAll("path")
 				.attr("fill", f => (Number.isFinite(f.__val) ? color(f.__val) : "#f3f4f6"));
 
-			drawLegend(color, state.metric === "total" ? "Total deletions" : "Female vs Male %");
+			if (state.metric === "total") {
+				drawLegendContinuous(color, "Total deletions");
+			} else {
+				drawLegendDiverging(color, "Female vs Male %");
+			}
 
 			const parts = [];
 			parts.push(state.metric === "total" ? "All deletions" : "Female vs Male %");
@@ -255,7 +329,21 @@
 			sel.status.text(`Showing: ${parts.join(" ")}`);
 		}
 
-		function drawLegend(color, title) {
+		function computeRatio(v) {
+			const provided = v.every(d => Number.isFinite(d[COLS.ratio]));
+			if (provided) {
+				const w = d3.sum(v, d => (Number.isFinite(d[COLS.ratio]) ? d[COLS.male] : 0));
+				return w > 0
+					? d3.sum(v, d => (d[COLS.ratio] || 0) * (d[COLS.male] || 0)) / w
+					: d3.mean(v, d => d[COLS.ratio]);
+			}
+			const m = d3.sum(v, d => d[COLS.male]);
+			const f = d3.sum(v, d => d[COLS.female]);
+			return m > 0 ? (f / m) * 100 : NaN;
+		}
+
+		// -------- Legends --------
+		function drawLegendContinuous(color, title) {
 			sel.legend.selectAll("*").remove();
 			sel.legend.append("div").attr("class", "map-legend-title").text(title);
 
@@ -276,9 +364,38 @@
 				.text(d => d);
 		}
 
+		function drawLegendDiverging(color, title) {
+			sel.legend.selectAll("*").remove();
+			sel.legend.append("div").attr("class", "map-legend-title").text(title);
+
+			const labels = [
+				">10% more female",
+				"5–10% more female",
+				"0–5% more female",
+				"0–5% more male",
+				"5–10% more male",
+				">10% more male",
+			];
+
+			const row = sel.legend.append("div").attr("class", "map-legend-steps");
+			color.range().forEach((c, i) => {
+				const sw = row
+					.append("div")
+					.attr("class", "map-legend-row")
+					.style("display", "flex")
+					.style("alignItems", "center")
+					.style("gap", "8px");
+				sw.append("div").attr("class", "map-legend-swatch").style("background", c);
+				sw.append("span").style("font-size", "12px").text(labels[i]);
+			});
+		}
+
+		// -------- Tooltip --------
 		function showTip(event, f) {
-			const acNo = f.properties[state.acKeyInGeo];
-			const name = f.__meta?.name ?? f.properties.AC_NAME ?? `AC ${acNo}`;
+			const acName = String(f.properties[state.acNameKeyInGeo] ?? "").trim();
+			const maybeNo = state.acKeyInGeo ? f.properties[state.acKeyInGeo] : null;
+			const nameLine = maybeNo != null ? `${acName} (AC ${maybeNo})` : acName;
+
 			const val = f.__val;
 			const male = f.__meta?.male ?? null;
 			const female = f.__meta?.female ?? null;
@@ -286,16 +403,16 @@
 			const line =
 				state.metric === "total"
 					? `<b>Total deletions:</b> ${fmt(val)}`
-					: `<b>Female vs Male %:</b> ${isFinite(val) ? d3.format(".1f")(val) + "%" : "–"}`;
+					: `<b>Female vs Male %:</b> ${
+							isFinite(val) ? (val >= 0 ? "+" : "") + d3.format(".1f")(val) + "%" : "–"
+					  }`;
 			const mf =
 				male != null || female != null
 					? `<div>Male: ${fmt(male)} · Female: ${fmt(female)}</div>`
 					: "";
 
 			sel.tooltip
-				.html(
-					`<div style="font-weight:700;margin-bottom:4px">${name} (AC ${acNo})</div>${line}${mf}`,
-				)
+				.html(`<div style="font-weight:700;margin-bottom:4px">${nameLine}</div>${line}${mf}`)
 				.style("left", event.offsetX + 14 + "px")
 				.style("top", event.offsetY + 14 + "px")
 				.attr("hidden", null);
