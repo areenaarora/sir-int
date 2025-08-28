@@ -1,26 +1,27 @@
 // ----- DOM -----
 const q = document.getElementById("q");
 const pageSizeSel = document.getElementById("pageSize");
+
+// make 25 the default shown/used on load
+pageSizeSel.value = "25"; // 👈 add this line
+
 const thead = document.getElementById("thead");
 const tbody = document.getElementById("tbody");
 const btnPrev = document.getElementById("prev");
 const btnNext = document.getElementById("next");
 const pageInfo = document.getElementById("pageInfo");
-
-const colList = document.getElementById("colList");
-const filterRowsEl = document.getElementById("filterRows");
-const btnAddFilter = document.getElementById("btnAddFilter");
+// ...
 
 // ----- State -----
-let rows = []; // all data
-let headers = []; // column names in CSV order
+let rows = [];
+let headers = [];
 let numericCols = new Set();
-let selectedCols = []; // subset to display
-let filtered = []; // rows after search+filters
+let selectedCols = [];
+let filtered = [];
 let page = 1;
-let pageSize = parseInt(pageSizeSel.value, 10);
-let sortKey = null; // column name
-let sortDir = "asc"; // 'asc' | 'desc'
+let pageSize = parseInt(pageSizeSel.value, 10); // now reads 25
+let sortKey = null;
+let sortDir = "asc";
 
 // ===== Helpers =====
 const numericLikeRE = /^\s*[-+]?(\d{1,3}(,\d{3})*|\d+)(\.\d+)?\s*%?\s*$/;
