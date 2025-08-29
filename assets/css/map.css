@@ -99,7 +99,9 @@
 	border: 1px solid #e5e7eb;
 	border-radius: 8px;
 	font-size: 14px;
+	overflow: hidden;
 }
+
 .map-legend-title {
 	font-weight: 700;
 	margin-bottom: 8px;

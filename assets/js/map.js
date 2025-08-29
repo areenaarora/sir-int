@@ -347,47 +347,88 @@
 			sel.legend.selectAll("*").remove();
 			sel.legend.append("div").attr("class", "map-legend-title").text(title);
 
-			const steps = sel.legend.append("div").attr("class", "map-legend-steps");
-			color
-				.range()
-				.forEach(c =>
-					steps.append("div").attr("class", "map-legend-swatch").style("background", c),
-				);
-
 			const domain = [d3.min(color.domain()), d3.max(color.domain())];
-			sel.legend
+
+			// grid: [min][swatches flex][max]
+			const bar = sel.legend
 				.append("div")
-				.attr("class", "map-legend-labels")
-				.selectAll("span")
-				.data([fmt(domain[0]), fmt(domain[1])])
-				.join("span")
-				.text(d => d);
+				.attr("class", "map-legend-bar")
+				.style("display", "grid")
+				.style("grid-template-columns", "auto 1fr auto")
+				.style("align-items", "center")
+				.style("gap", "8px");
+
+			bar
+				.append("span")
+				.attr("class", "map-legend-min")
+				.style("font-size", "14px")
+				.text(fmt(domain[0]));
+
+			const sw = bar
+				.append("div")
+				.attr("class", "map-legend-swatches")
+				.style("display", "grid")
+				.style("grid-auto-flow", "column")
+				.style("grid-auto-columns", "minmax(16px,1fr)")
+				.style("gap", "4px");
+
+			color.range().forEach(c => {
+				sw.append("div")
+					.attr("class", "map-legend-swatch")
+					.style("height", "12px")
+					.style("background", c)
+					.style("border", "1px solid rgba(0,0,0,0.1)");
+			});
+
+			bar
+				.append("span")
+				.attr("class", "map-legend-max")
+				.style("font-size", "14px")
+				.style("text-align", "right")
+				.text(fmt(domain[1]));
 		}
 
 		function drawLegendDiverging(color, title) {
 			sel.legend.selectAll("*").remove();
 			sel.legend.append("div").attr("class", "map-legend-title").text(title);
 
-			const labels = [
-				">10% more female",
-				"5–10% more female",
-				"0–5% more female",
-				"0–5% more male",
-				"5–10% more male",
-				">10% more male",
-			];
+			// grid: [left label][swatches flex][right label]
+			const bar = sel.legend
+				.append("div")
+				.attr("class", "map-legend-bar")
+				.style("display", "grid")
+				.style("grid-template-columns", "auto 1fr auto")
+				.style("align-items", "center")
+				.style("gap", "8px");
 
-			const row = sel.legend.append("div").attr("class", "map-legend-steps");
-			color.range().forEach((c, i) => {
-				const sw = row
-					.append("div")
-					.attr("class", "map-legend-row")
-					.style("display", "flex")
-					.style("alignItems", "center")
-					.style("gap", "8px");
-				sw.append("div").attr("class", "map-legend-swatch").style("background", c);
-				sw.append("span").style("font-size", "12px").text(labels[i]);
+			bar
+				.append("span")
+				.attr("class", "map-legend-min")
+				.style("font-size", "14px")
+				.text("More male deletions"); // left = reds
+
+			const sw = bar
+				.append("div")
+				.attr("class", "map-legend-swatches")
+				.style("display", "grid")
+				.style("grid-auto-flow", "column")
+				.style("grid-auto-columns", "minmax(16px,1fr)")
+				.style("gap", "4px");
+
+			color.range().forEach(c => {
+				sw.append("div")
+					.attr("class", "map-legend-swatch")
+					.style("height", "12px")
+					.style("background", c)
+					.style("border", "1px solid rgba(0,0,0,0.1)");
 			});
+
+			bar
+				.append("span")
+				.attr("class", "map-legend-max")
+				.style("font-size", "14px")
+				.style("text-align", "right")
+				.text("More female deletions"); // right = greens
 		}
 
 		// -------- Tooltip --------

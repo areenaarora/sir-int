@@ -245,7 +245,7 @@
 					</div>
 
 					<!-- Legend relocated here -->
-					<div id="mapLegend" class="map-legend"></div>
+					<div id="mapLegend" class="map-legend hidden" aria-hidden="true"></div>
 
 					<aside class="filters" id="filters">
 						<h3 class="box__title">Select columns</h3>
@@ -351,6 +351,29 @@
 				geoUrl: "./assets/data/bihar_acs.json",
 				topoObject: "bihar_acs",
 			});
+		</script>
+
+		<!-- Legend visibility: only show in Map view -->
+		<script>
+			(function () {
+				const mapLegend = document.getElementById("mapLegend");
+				const btnMapView = document.getElementById("btnMapView");
+				const btnTableView = document.getElementById("btnTableView");
+				const mapCard = document.getElementById("mapCard");
+
+				function syncLegend() {
+					const isTable = mapCard?.classList.contains("hidden"); // true when Table view is active
+					if (mapLegend) {
+						mapLegend.classList.toggle("hidden", isTable);
+						mapLegend.setAttribute("aria-hidden", String(isTable));
+					}
+				}
+
+				// Run after initial view state is set
+				window.requestAnimationFrame(syncLegend);
+				btnMapView?.addEventListener("click", () => requestAnimationFrame(syncLegend));
+				btnTableView?.addEventListener("click", () => requestAnimationFrame(syncLegend));
+			})();
 		</script>
 
 		<!-- optional vendor JS -->
