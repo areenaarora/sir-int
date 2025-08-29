@@ -433,3 +433,10 @@ th .sort {
 .layout.layout--pretable .right-rail {
 	grid-column: 1 / -1; /* span the whole row */
 }
+
+@media (min-width: 1200px) {
+	/* Was 520px 1fr — shrink the text column so the map grows */
+	.map-2col__grid {
+		grid-template-columns: 400px minmax(0, 1fr);
+	}
+}
