@@ -83,6 +83,14 @@
 	display: block;
 }
 
+/* Bigger map on mobile */
+@media (max-width: 768px) {
+	#mapCard #biharMap {
+		height: 100vh !important;
+		max-height: none !important;
+	}
+}
+
 .map-acs {
 	stroke: #9ca3af;
 	stroke-width: 0.6;

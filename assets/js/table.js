@@ -35,7 +35,7 @@ const HEADER_LABELS = {
 	"Reason for deletion": "Reason",
 	"Male deletions": "Male",
 	"Female deletions": "Female",
-	"Gender index": "Female - male (% points)",
+	"Gender imbalance in pct": "Female - male (% points)",
 };
 const labelFor = h => HEADER_LABELS[h] || h;
 
