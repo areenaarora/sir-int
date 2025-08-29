@@ -56,8 +56,7 @@
 .intro-block {
 	--intro-bg: #ffffff;
 	--intro-border: #e5e7eb;
-	--intro-accent: #3b82f6;
-	--intro-text: #374151;
+	--intro-text: #303030;
 	max-width: 1100px;
 	margin: 20px auto 36px;
 	background: var(--intro-bg);
@@ -73,7 +72,7 @@
 }
 .intro-block p {
 	color: var(--intro-text);
-	font-size: clamp(16px, 1.6vw, 19px);
+	font-size: 1.1rem;
 	line-height: 1.6;
 	margin: 0 0 10px;
 }
