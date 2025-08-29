@@ -156,3 +156,29 @@
 	font-size: 12px;
 	color: #374151;
 }
+
+.map-note {
+	background: #fff;
+	border: 1px solid #e5e7eb; /* light gray */
+	border-radius: 12px;
+	padding: 16px;
+	margin-top: 16px; /* space below legend */
+}
+.map-note__title {
+	margin: 0 0 8px 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+#mapNoteText {
+	width: 100%;
+	min-height: 120px;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	padding: 10px 12px;
+	font: inherit;
+	line-height: 1.4;
+	resize: vertical;
+}
+.hidden {
+	display: none !important;
+} /* you already have this, keep if present */

@@ -35,14 +35,13 @@
 	];
 	// Fixed, diverging bins for Female vs Male % (signed percentage points, + = more female)
 	const COLORS_RATIO_DIVERGE = [
-		"#b30000", // >10% more female
-		"#fc8d59", // 5–10% more female
-		"#fdd49e", // 0–5% more female
-		"#c7e9c0", // 0–5% more male
-		"#74c476", // 5–10% more male
-		"#006d2c", // >10% more male
+		"#006d2c", // < 0  (more male deletions)
+		"#fee5d9", // 0 – low  (few % more female)
+		"#fcbba1",
+		"#fc9272",
+		"#fb6a4a",
+		"#cb181d", // highest (many % more female)
 	];
-
 	const fmt = x => (x == null || !isFinite(+x) ? "–" : d3.format(",")(x));
 	const toNum = v => (v == null || v === "" ? 0 : +String(v).replace(/,/g, ""));
 
@@ -303,12 +302,12 @@
 			// Color scales
 			let color;
 			if (state.metric === "total") {
-				// quantile ramp for totals
 				color = d3.scaleQuantile().domain(values).range(COLORS_TOTAL);
 			} else {
-				// fixed thresholds for Female vs Male %
-				// bins: (-∞,-10), [-10,-5), [-5,0), [0,5), [5,10), [10,∞)
-				color = d3.scaleThreshold().domain([-10, -5, 0, 5, 10]).range(COLORS_RATIO_DIVERGE);
+				// Breaks matched to your QGIS classes.
+				// Values < 0 => first color (green), then increasing reds.
+				const RATIO_BREAKS = [0, 37.3, 44.1, 52.0, 58.8];
+				color = d3.scaleThreshold().domain(RATIO_BREAKS).range(COLORS_RATIO_DIVERGE);
 			}
 
 			gAcs
