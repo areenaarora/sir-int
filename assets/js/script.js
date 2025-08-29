@@ -72,7 +72,7 @@ function copyToClipboard() {
 	$temp.remove();
 }
 function sendEmail() {
-	var subject = "UPDATE THIS";
+	var subject = "Bihar voter rolls: Deleted voters by reason and age | The Hindu interactive";
 	var emailBody = pageURL;
 	document.location = "mailto:?subject=" + subject + "&body=" + emailBody;
 }

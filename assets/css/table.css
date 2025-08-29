@@ -23,13 +23,13 @@
 	font-weight: 800;
 	line-height: 1.05;
 	letter-spacing: -0.01em;
-	font-size: 3.2rem;
+	font-size: 2.7rem;
 	margin: 0 0 12px;
 }
 .hero_deck {
 	font-size: clamp(16px, 2.2vw, 22px);
 	line-height: 1.5;
-	max-width: 60ch;
+	max-width: none;
 	margin: 0 0 12px;
 	opacity: 0.9;
 }
