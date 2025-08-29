@@ -27,6 +27,18 @@ let pageSize = parseInt(pageSizeSel.value, 10); // now reads 25
 let sortKey = null;
 let sortDir = "asc";
 
+// Friendly display labels for the table (keep CSV keys as values)
+const HEADER_LABELS = {
+	"Assembly constituency name": "AC name",
+	"Age group": "Age group",
+	"Total deletions": "Deletions",
+	"Reason for deletion": "Reason",
+	"Male deletions": "Male",
+	"Female deletions": "Female",
+	"Gender index": "Female - male (% points)",
+};
+const labelFor = h => HEADER_LABELS[h] || h;
+
 // NEW: categorical columns use dropdowns
 const CAT_COLS = new Set(["Age group", "Reason for deletion"]);
 let UNIQUES = {}; // filled after CSV load
@@ -154,8 +166,9 @@ function buildColumnPicker() {
 		const id = "c_" + h.replace(/\W+/g, "_");
 		const wrap = document.createElement("label");
 		wrap.className = "chk";
+		// IMPORTANT: value/data-col stays the real CSV key; the text uses the label
 		wrap.innerHTML = `<input type="checkbox" id="${id}" data-col="${h}" checked>
-                      <span>${h}</span>`;
+                      <span>${labelFor(h)}</span>`;
 		colList.appendChild(wrap);
 		wrap.querySelector("input").addEventListener("change", e => {
 			const col = e.target.dataset.col;
@@ -266,11 +279,32 @@ function applySearchAndFilters() {
 	const term = q.value.trim().toLowerCase();
 	const conditions = collectFilters();
 
+	// Group categorical "=" filters by column -> OR sets
+	const orSets = new Map(); // col -> Set of allowed values (lowercased)
+	const others = []; // everything else stays ANDed
+	for (const f of conditions) {
+		if (CAT_COLS.has(f.col) && f.op === "=") {
+			const key = f.col;
+			const set = orSets.get(key) || new Set();
+			set.add(String(f.val).toLowerCase());
+			orSets.set(key, set);
+		} else {
+			others.push(f);
+		}
+	}
+
 	filtered = rows.filter(r => {
-		// apply filter rows
-		for (const f of conditions) {
+		// 1) OR groups for categorical "=" (e.g., Age group = 45–60 OR 61–75)
+		for (const [col, set] of orSets) {
+			const v = String(r[col] ?? "").toLowerCase();
+			if (!set.has(v)) return false; // must match at least one chosen value
+		}
+
+		// 2) Remaining conditions are ANDed as before
+		for (const f of others) {
 			const vRaw = r[f.col];
 			const isNum = numericCols.has(f.col);
+
 			if (isNum) {
 				const v = toNumber(vRaw);
 				const t = toNumber(f.val);
@@ -291,7 +325,8 @@ function applySearchAndFilters() {
 				if (f.op === "!=" && !(v !== t)) return false;
 			}
 		}
-		// global search
+
+		// 3) Global search (still ANDed with filters)
 		if (!term) return true;
 		return Object.values(r).some(v => String(v).toLowerCase().includes(term));
 	});
@@ -322,7 +357,7 @@ function buildHeader() {
 	const tr = document.createElement("tr");
 	cols.forEach(col => {
 		const th = document.createElement("th");
-		th.textContent = col;
+		th.textContent = labelFor(col);
 		const s = document.createElement("span");
 		s.className = "sort";
 		th.appendChild(s);
