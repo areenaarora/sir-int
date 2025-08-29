@@ -159,26 +159,38 @@
 
 .map-note {
 	background: #fff;
-	border: 1px solid #e5e7eb; /* light gray */
+	border: 1px solid #e5e7eb;
 	border-radius: 12px;
 	padding: 16px;
-	margin-top: 16px; /* space below legend */
+	margin-top: 16px;
 }
 .map-note__title {
 	margin: 0 0 8px 0;
 	font-size: 16px;
 	font-weight: 700;
 }
-#mapNoteText {
-	width: 100%;
-	min-height: 120px;
-	border: 1px solid #d1d5db;
-	border-radius: 8px;
-	padding: 10px 12px;
-	font: inherit;
-	line-height: 1.4;
-	resize: vertical;
+.map-note__text {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #1f2937; /* neutral text */
+}
+.map-note__text p {
+	margin: 0 0 8px;
 }
 .hidden {
 	display: none !important;
-} /* you already have this, keep if present */
+} /* you likely already have this */
+
+/* notes box should be left-aligned and not preserve code indentation */
+.map-note,
+.map-note__text {
+	text-align: left !important;
+}
+
+.map-note__text {
+	white-space: normal; /* was pre-wrap; this removes the “centered” look from indents */
+}
+
+.map-note__text p {
+	margin: 0 0 8px;
+}

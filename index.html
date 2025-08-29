@@ -246,14 +246,17 @@
 
 					<!-- Legend relocated here -->
 					<div id="mapLegend" class="map-legend hidden" aria-hidden="true"></div>
-					<!-- Notes box-->
+
+					<!-- Notes -->
 					<div id="mapNote" class="map-note hidden" aria-hidden="true">
 						<h3 class="map-note__title">Notes</h3>
-						<textarea
-							id="mapNoteText"
-							rows="6"
-							placeholder="Add context or observations here…"
-						></textarea>
+						<div id="mapNoteText" class="map-note__text">
+							<p>
+								<strong>Age 18–29, Permanently shifted:</strong> Sharp female-skewed deletions in SW
+								and NE belts; isolated male-skewed pocket near Gaya.
+							</p>
+							<p>Use the Reason & Age filters to compare patterns.</p>
+						</div>
 					</div>
 
 					<aside class="filters" id="filters">
@@ -388,36 +391,22 @@
 			(function () {
 				const mapLegend = document.getElementById("mapLegend");
 				const mapNote = document.getElementById("mapNote");
-				const noteArea = document.getElementById("mapNoteText");
 				const btnMapView = document.getElementById("btnMapView");
 				const btnTableView = document.getElementById("btnTableView");
 				const mapCard = document.getElementById("mapCard");
 
-				function syncLegendAndNote() {
-					const isTable = mapCard?.classList.contains("hidden"); // true when table is visible
-					if (mapLegend) {
-						mapLegend.classList.toggle("hidden", isTable);
-						mapLegend.setAttribute("aria-hidden", String(isTable));
-					}
-					if (mapNote) {
-						mapNote.classList.toggle("hidden", isTable);
-						mapNote.setAttribute("aria-hidden", String(isTable));
+				function syncLeftRail() {
+					const isTable = mapCard?.classList.contains("hidden");
+					for (const el of [mapLegend, mapNote]) {
+						if (!el) continue;
+						el.classList.toggle("hidden", isTable);
+						el.setAttribute("aria-hidden", String(isTable));
 					}
 				}
 
-				// Restore saved note (optional)
-				if (noteArea) {
-					const saved = localStorage.getItem("bihar_map_note") || "";
-					noteArea.value = saved;
-					noteArea.addEventListener("input", () => {
-						localStorage.setItem("bihar_map_note", noteArea.value);
-					});
-				}
-
-				// Initial sync after layout
-				requestAnimationFrame(syncLegendAndNote);
-				btnMapView?.addEventListener("click", () => requestAnimationFrame(syncLegendAndNote));
-				btnTableView?.addEventListener("click", () => requestAnimationFrame(syncLegendAndNote));
+				requestAnimationFrame(syncLeftRail);
+				btnMapView?.addEventListener("click", () => requestAnimationFrame(syncLeftRail));
+				btnTableView?.addEventListener("click", () => requestAnimationFrame(syncLeftRail));
 			})();
 		</script>
 
