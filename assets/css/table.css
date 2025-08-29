@@ -4,7 +4,6 @@
 	color: #111;
 	padding: clamp(48px, 8vw, 120px) 0;
 }
-
 .hero.hero--tight {
 	padding-bottom: clamp(8px, 1.6vw, 18px);
 }
@@ -57,9 +56,8 @@
 .intro-block {
 	--intro-bg: #ffffff;
 	--intro-border: #e5e7eb;
-	--intro-accent: #3b82f6; /* TH blue */
+	--intro-accent: #3b82f6;
 	--intro-text: #374151;
-
 	max-width: 1100px;
 	margin: 20px auto 36px;
 	background: var(--intro-bg);
@@ -69,24 +67,19 @@
 	padding: clamp(14px, 2.4vw, 22px);
 	position: relative;
 }
-
 .intro-block__inner {
 	max-width: none;
-	margin-left: clamp(0px, 0.2vw, 4px); /* tiny optical shift */
+	margin-left: clamp(0px, 0.2vw, 4px);
 }
-
 .intro-block p {
 	color: var(--intro-text);
 	font-size: clamp(16px, 1.6vw, 19px);
 	line-height: 1.6;
 	margin: 0 0 10px;
 }
-
 .intro-block b {
 	font-weight: 700;
 }
-
-/* Optional: compact spacing on very small screens */
 @media (max-width: 540px) {
 	.intro-block {
 		margin: 14px 12px 26px;
@@ -111,8 +104,6 @@
 	align-items: start;
 	overflow-x: clip; /* prevent right overflow */
 }
-
-/* Left rail */
 .left-rail {
 	position: sticky;
 	top: 16px;
@@ -121,14 +112,12 @@
 	flex-direction: column;
 	gap: 12px;
 }
-
-/* Right rail */
 .right-rail {
 	grid-column: 2 / 3; /* end at grid edge -> keeps right gutter equal */
 	display: flex;
 	flex-direction: column;
 	gap: 0;
-	min-width: 0; /* allow shrinking; avoids overflow from wide children */
+	min-width: 0; /* allow shrinking */
 }
 
 /* ---------- View toggle ---------- */
@@ -306,12 +295,75 @@ th .sort {
 	align-items: center;
 }
 
+/* ---------- Pre-table section wrapper ---------- */
+.layout.layout--pretable {
+	padding-bottom: 0;
+}
+
+/* ---------- Two-column explainer + ai2html map ---------- */
+/* Center the block like intro/credits */
+.map-2col {
+	max-width: 1100px;
+	margin: 0 auto 36px;
+	padding: 0 24px;
+}
+/* Rebalance columns so the map sits a bit left */
+.map-2col__grid {
+	display: grid;
+	grid-template-columns: 560px 1fr;
+	gap: 28px;
+	align-items: center;
+}
+.map-2col__text {
+	font-size: 16px;
+	line-height: 1.5;
+}
+.map-2col__viz {
+	justify-self: end;
+	width: 100%;
+}
+
+/* Keep ai2html from auto-centering; ensure responsiveness */
+.map-2col__viz #g-18-29_svg-box,
+.map-2col__viz #g-18-29_svg-box .g-artboard {
+	margin: 0 !important;
+}
+.map-2col__viz .g-artboard {
+	max-width: 100% !important;
+}
+.map-2col__viz .g-aiImg {
+	width: 100% !important;
+	height: auto !important;
+}
+
+@media (max-width: 1280px) {
+	.map-2col__grid {
+		grid-template-columns: 480px 1fr;
+	}
+}
+@media (max-width: 1100px) {
+	.map-2col__grid {
+		grid-template-columns: 440px 1fr;
+	}
+}
+@media (max-width: 800px) {
+	.map-2col {
+		padding: 0 16px;
+	}
+	.map-2col__grid {
+		grid-template-columns: 1fr;
+	}
+	.map-2col__viz {
+		justify-self: start;
+	}
+}
+
 /* --- Credits block --- */
 .credits {
 	background: #fff;
 	color: #111;
 	border-top: 1px solid #e5e7eb;
-	border-bottom: 1px solid #e5e7eb; /* optional, for a line below too */
+	border-bottom: 1px solid #e5e7eb;
 	padding: clamp(28px, 4vw, 64px) 0;
 	margin-top: clamp(24px, 4vw, 56px);
 }
@@ -332,7 +384,7 @@ th .sort {
 	margin: 0;
 }
 
-/* ---------- Responsive ---------- */
+/* ---------- Responsive (global) ---------- */
 @media (max-width: 960px) {
 	.layout {
 		grid-template-columns: 1fr;
@@ -345,4 +397,39 @@ th .sort {
 	.right-rail {
 		grid-column: auto;
 	}
+}
+
+#g-18-29_svg-Artboard_1 {
+	width: 100% !important;
+	max-width: 100% !important;
+	max-height: none !important;
+}
+
+/* ---- ai2html: robust fallback so the map never collapses on desktop ---- */
+.map-2col__viz #g-18-29_svg-Artboard_1 {
+	width: 100% !important; /* give the artboard a definite width */
+}
+
+/* hide the padding shim (we'll size from the image itself) */
+.map-2col__viz #g-18-29_svg-Artboard_1 > div[style^="padding"] {
+	display: none !important;
+}
+
+/* make the exported PNG flow normally (not absolute) */
+.map-2col__viz #g-18-29_svg-box .g-aiImg {
+	position: static !important;
+	top: auto !important;
+	display: block !important;
+	width: 100% !important;
+	height: auto !important;
+}
+
+/* Make the pre-table section full width (no empty left rail) */
+.layout.layout--pretable {
+	grid-template-columns: 1fr; /* single column here */
+	gap: 0; /* optional: remove the grid gap */
+}
+
+.layout.layout--pretable .right-rail {
+	grid-column: 1 / -1; /* span the whole row */
 }
