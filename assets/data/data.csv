@@ -128,7 +128,7 @@ Chanpatia,18-29,442,Duplicate enrolment,213,229,3.62
 Chanpatia,30-44,681,Duplicate enrolment,358,323,-5.14
 Chanpatia,45-60,211,Duplicate enrolment,105,106,0.47
 Chanpatia,61-75,52,Duplicate enrolment,23,29,11.54
-Chanpatia,75+,12,Duplicate enrolment,6,6,0.0
+Chanpatia,75+,12,Duplicate enrolment,6,6,0
 Chanpatia,18-29,"1,228",Permanently shifted,384,844,37.46
 Chanpatia,30-44,"2,307",Permanently shifted,970,"1,337",15.91
 Chanpatia,45-60,989,Permanently shifted,507,482,-2.53
@@ -168,11 +168,11 @@ Sikta,18-29,977,Duplicate enrolment,531,446,-8.7
 Sikta,30-44,"1,082",Duplicate enrolment,582,500,-7.58
 Sikta,45-60,310,Duplicate enrolment,144,166,7.1
 Sikta,61-75,104,Duplicate enrolment,49,55,5.77
-Sikta,75+,16,Duplicate enrolment,8,8,0.0
+Sikta,75+,16,Duplicate enrolment,8,8,0
 Sikta,18-29,"2,778",Permanently shifted,"1,037","1,741",25.34
 Sikta,30-44,"3,403",Permanently shifted,"1,416","1,987",16.78
 Sikta,45-60,"1,244",Permanently shifted,588,656,5.47
-Sikta,61-75,375,Permanently shifted,165,210,12.0
+Sikta,61-75,375,Permanently shifted,165,210,12
 Sikta,75+,74,Permanently shifted,30,44,18.92
 Sikta,18-29,"1,589",Untraceable,736,853,7.36
 Sikta,30-44,"1,548",Untraceable,661,887,14.6
@@ -193,7 +193,7 @@ Raxaul,18-29,"2,008",Permanently shifted,697,"1,311",30.58
 Raxaul,30-44,"3,309",Permanently shifted,"1,499","1,810",9.4
 Raxaul,45-60,"1,675",Permanently shifted,893,782,-6.63
 Raxaul,61-75,500,Permanently shifted,257,243,-2.8
-Raxaul,75+,100,Permanently shifted,47,53,6.0
+Raxaul,75+,100,Permanently shifted,47,53,6
 Raxaul,18-29,"1,284",Untraceable,541,743,15.73
 Raxaul,30-44,"1,813",Untraceable,796,"1,017",12.19
 Raxaul,45-60,822,Untraceable,404,418,1.7
@@ -248,7 +248,7 @@ Harsidhi (SC),18-29,696,Duplicate enrolment,280,416,19.54
 Harsidhi (SC),30-44,816,Duplicate enrolment,385,431,5.64
 Harsidhi (SC),45-60,155,Duplicate enrolment,58,97,25.16
 Harsidhi (SC),61-75,38,Duplicate enrolment,12,26,36.84
-Harsidhi (SC),75+,2,Duplicate enrolment,1,1,0.0
+Harsidhi (SC),75+,2,Duplicate enrolment,1,1,0
 Harsidhi (SC),18-29,"2,385",Permanently shifted,496,"1,889",58.41
 Harsidhi (SC),30-44,"2,978",Permanently shifted,"1,140","1,838",23.44
 Harsidhi (SC),45-60,"1,580",Permanently shifted,775,805,1.9
@@ -256,7 +256,7 @@ Harsidhi (SC),61-75,420,Permanently shifted,195,225,7.14
 Harsidhi (SC),75+,92,Permanently shifted,44,48,4.35
 Harsidhi (SC),18-29,764,Untraceable,264,500,30.89
 Harsidhi (SC),30-44,859,Untraceable,352,507,18.04
-Harsidhi (SC),45-60,280,Untraceable,119,161,15.0
+Harsidhi (SC),45-60,280,Untraceable,119,161,15
 Harsidhi (SC),61-75,85,Untraceable,35,50,17.65
 Harsidhi (SC),75+,29,Untraceable,16,13,-10.34
 Govindganj,18-29,247,Deceased,116,131,6.07
@@ -288,7 +288,7 @@ Kesaria,18-29,949,Duplicate enrolment,464,485,2.21
 Kesaria,30-44,"1,461",Duplicate enrolment,725,736,0.75
 Kesaria,45-60,496,Duplicate enrolment,215,281,13.31
 Kesaria,61-75,137,Duplicate enrolment,61,76,10.95
-Kesaria,75+,25,Duplicate enrolment,11,14,12.0
+Kesaria,75+,25,Duplicate enrolment,11,14,12
 Kesaria,18-29,"2,250",Permanently shifted,481,"1,769",57.24
 Kesaria,30-44,"3,019",Permanently shifted,"1,174","1,845",22.23
 Kesaria,45-60,"1,878",Permanently shifted,945,933,-0.64
@@ -297,7 +297,7 @@ Kesaria,75+,126,Permanently shifted,57,69,9.52
 Kesaria,18-29,"1,483",Untraceable,524,959,29.33
 Kesaria,30-44,"2,505",Untraceable,"1,177","1,328",6.03
 Kesaria,45-60,"1,398",Untraceable,660,738,5.58
-Kesaria,61-75,475,Untraceable,209,266,12.0
+Kesaria,61-75,475,Untraceable,209,266,12
 Kesaria,75+,163,Untraceable,58,105,28.83
 Kalyanpur,18-29,265,Deceased,107,158,19.25
 Kalyanpur,30-44,942,Deceased,484,458,-2.76
@@ -308,7 +308,7 @@ Kalyanpur,18-29,854,Duplicate enrolment,397,457,7.03
 Kalyanpur,30-44,"1,632",Duplicate enrolment,880,752,-7.84
 Kalyanpur,45-60,522,Duplicate enrolment,257,265,1.53
 Kalyanpur,61-75,132,Duplicate enrolment,58,74,12.12
-Kalyanpur,75+,30,Duplicate enrolment,15,15,0.0
+Kalyanpur,75+,30,Duplicate enrolment,15,15,0
 Kalyanpur,18-29,"1,976",Permanently shifted,431,"1,545",56.38
 Kalyanpur,30-44,"3,468",Permanently shifted,"1,291","2,177",25.55
 Kalyanpur,45-60,"1,900",Permanently shifted,917,983,3.47
@@ -319,26 +319,26 @@ Kalyanpur,30-44,"1,760",Untraceable,729,"1,031",17.16
 Kalyanpur,45-60,819,Untraceable,419,400,-2.32
 Kalyanpur,61-75,270,Untraceable,129,141,4.44
 Kalyanpur,75+,68,Untraceable,25,43,26.47
-Pipra,18-29,352,Deceased,183,169,-3.98
-Pipra,30-44,"1,490",Deceased,771,719,-3.49
-Pipra,45-60,"2,781",Deceased,"1,473","1,308",-5.93
-Pipra,61-75,"4,002",Deceased,"1,841","2,161",8.0
-Pipra,75+,"2,143",Deceased,923,"1,220",13.86
-Pipra,18-29,"1,146",Duplicate enrolment,550,596,4.01
-Pipra,30-44,"2,081",Duplicate enrolment,"1,048","1,033",-0.72
-Pipra,45-60,594,Duplicate enrolment,254,340,14.48
-Pipra,61-75,173,Duplicate enrolment,77,96,10.98
-Pipra,75+,31,Duplicate enrolment,12,19,22.58
-Pipra,18-29,"3,417",Permanently shifted,717,"2,700",58.03
-Pipra,30-44,"6,157",Permanently shifted,"2,433","3,724",20.97
-Pipra,45-60,"3,081",Permanently shifted,"1,556","1,525",-1.01
-Pipra,61-75,873,Permanently shifted,454,419,-4.01
-Pipra,75+,194,Permanently shifted,89,105,8.25
-Pipra,18-29,"1,560",Untraceable,541,"1,019",30.64
-Pipra,30-44,"2,985",Untraceable,"1,280","1,705",14.24
-Pipra,45-60,"1,415",Untraceable,728,687,-2.9
-Pipra,61-75,438,Untraceable,192,246,12.33
-Pipra,75+,132,Untraceable,47,85,28.79
+"Pipra, Purvi Champaran",18-29,352,Deceased,183,169,-3.98
+"Pipra, Purvi Champaran",30-44,"1,490",Deceased,771,719,-3.49
+"Pipra, Purvi Champaran",45-60,"2,781",Deceased,"1,473","1,308",-5.93
+"Pipra, Purvi Champaran",61-75,"4,002",Deceased,"1,841","2,161",8
+"Pipra, Purvi Champaran",75+,"2,143",Deceased,923,"1,220",13.86
+"Pipra, Purvi Champaran",18-29,"1,146",Duplicate enrolment,550,596,4.01
+"Pipra, Purvi Champaran",30-44,"2,081",Duplicate enrolment,"1,048","1,033",-0.72
+"Pipra, Purvi Champaran",45-60,594,Duplicate enrolment,254,340,14.48
+"Pipra, Purvi Champaran",61-75,173,Duplicate enrolment,77,96,10.98
+"Pipra, Purvi Champaran",75+,31,Duplicate enrolment,12,19,22.58
+"Pipra, Purvi Champaran",18-29,"3,417",Permanently shifted,717,"2,700",58.03
+"Pipra, Purvi Champaran",30-44,"6,157",Permanently shifted,"2,433","3,724",20.97
+"Pipra, Purvi Champaran",45-60,"3,081",Permanently shifted,"1,556","1,525",-1.01
+"Pipra, Purvi Champaran",61-75,873,Permanently shifted,454,419,-4.01
+"Pipra, Purvi Champaran",75+,194,Permanently shifted,89,105,8.25
+"Pipra, Purvi Champaran",18-29,"1,560",Untraceable,541,"1,019",30.64
+"Pipra, Purvi Champaran",30-44,"2,985",Untraceable,"1,280","1,705",14.24
+"Pipra, Purvi Champaran",45-60,"1,415",Untraceable,728,687,-2.9
+"Pipra, Purvi Champaran",61-75,438,Untraceable,192,246,12.33
+"Pipra, Purvi Champaran",75+,132,Untraceable,47,85,28.79
 Madhuban,18-29,333,Deceased,168,165,-0.9
 Madhuban,30-44,"1,482",Deceased,739,743,0.27
 Madhuban,45-60,"2,937",Deceased,"1,437","1,500",2.15
@@ -367,7 +367,7 @@ Motihari,75+,"3,157",Deceased,"1,594","1,563",-0.98
 Motihari,18-29,926,Duplicate enrolment,494,432,-6.7
 Motihari,30-44,"1,315",Duplicate enrolment,691,624,-5.1
 Motihari,45-60,331,Duplicate enrolment,146,185,11.78
-Motihari,61-75,100,Duplicate enrolment,48,52,4.0
+Motihari,61-75,100,Duplicate enrolment,48,52,4
 Motihari,75+,21,Duplicate enrolment,13,8,-23.81
 Motihari,18-29,"3,761",Permanently shifted,"1,376","2,385",26.83
 Motihari,30-44,"12,273",Permanently shifted,"5,431","6,842",11.5
@@ -389,7 +389,7 @@ Chiraia,30-44,"2,414",Duplicate enrolment,"1,281","1,133",-6.13
 Chiraia,45-60,643,Duplicate enrolment,317,326,1.4
 Chiraia,61-75,203,Duplicate enrolment,91,112,10.34
 Chiraia,75+,57,Duplicate enrolment,21,36,26.32
-Chiraia,18-29,"2,043",Permanently shifted,572,"1,471",44.0
+Chiraia,18-29,"2,043",Permanently shifted,572,"1,471",44
 Chiraia,30-44,"3,965",Permanently shifted,"1,595","2,370",19.55
 Chiraia,45-60,"1,931",Permanently shifted,979,952,-1.4
 Chiraia,61-75,578,Permanently shifted,285,293,1.38
@@ -427,7 +427,7 @@ Sheohar,75+,"1,787",Deceased,790,997,11.58
 Sheohar,18-29,908,Duplicate enrolment,427,481,5.95
 Sheohar,30-44,"1,020",Duplicate enrolment,523,497,-2.55
 Sheohar,45-60,296,Duplicate enrolment,133,163,10.14
-Sheohar,61-75,114,Duplicate enrolment,57,57,0.0
+Sheohar,61-75,114,Duplicate enrolment,57,57,0
 Sheohar,75+,27,Duplicate enrolment,10,17,25.93
 Sheohar,18-29,"2,874",Permanently shifted,705,"2,169",50.94
 Sheohar,30-44,"4,368",Permanently shifted,"1,579","2,789",27.7
@@ -445,7 +445,7 @@ Riga,45-60,"2,010",Deceased,"1,046",964,-4.08
 Riga,61-75,"4,026",Deceased,"1,946","2,080",3.33
 Riga,75+,"3,959",Deceased,"1,960","1,999",0.99
 Riga,18-29,"1,319",Duplicate enrolment,664,655,-0.68
-Riga,30-44,"1,400",Duplicate enrolment,742,658,-6.0
+Riga,30-44,"1,400",Duplicate enrolment,742,658,-6
 Riga,45-60,645,Duplicate enrolment,320,325,0.78
 Riga,61-75,206,Duplicate enrolment,105,101,-1.94
 Riga,75+,51,Duplicate enrolment,27,24,-5.88
@@ -467,7 +467,7 @@ Bathnaha (SC),75+,"3,956",Deceased,"1,849","2,107",6.52
 Bathnaha (SC),18-29,"1,313",Duplicate enrolment,652,661,0.69
 Bathnaha (SC),30-44,"1,286",Duplicate enrolment,625,661,2.8
 Bathnaha (SC),45-60,588,Duplicate enrolment,259,329,11.9
-Bathnaha (SC),61-75,200,Duplicate enrolment,94,106,6.0
+Bathnaha (SC),61-75,200,Duplicate enrolment,94,106,6
 Bathnaha (SC),75+,56,Duplicate enrolment,20,36,28.57
 Bathnaha (SC),18-29,"2,745",Permanently shifted,"1,007","1,738",26.63
 Bathnaha (SC),30-44,"2,816",Permanently shifted,"1,078","1,738",23.44
@@ -506,7 +506,7 @@ Sursand,61-75,"4,277",Deceased,"2,135","2,142",0.16
 Sursand,75+,"3,357",Deceased,"1,626","1,731",3.13
 Sursand,18-29,"1,080",Duplicate enrolment,564,516,-4.44
 Sursand,30-44,"1,277",Duplicate enrolment,664,613,-3.99
-Sursand,45-60,548,Duplicate enrolment,274,274,0.0
+Sursand,45-60,548,Duplicate enrolment,274,274,0
 Sursand,61-75,168,Duplicate enrolment,91,77,-8.33
 Sursand,75+,33,Duplicate enrolment,12,21,27.27
 Sursand,18-29,"3,081",Permanently shifted,"1,087","1,994",29.44
@@ -630,7 +630,7 @@ Benipatti,45-60,629,Duplicate enrolment,280,349,10.97
 Benipatti,61-75,199,Duplicate enrolment,89,110,10.55
 Benipatti,75+,61,Duplicate enrolment,25,36,18.03
 Benipatti,18-29,"2,332",Permanently shifted,604,"1,728",48.2
-Benipatti,30-44,"3,727",Permanently shifted,"1,584","2,143",15.0
+Benipatti,30-44,"3,727",Permanently shifted,"1,584","2,143",15
 Benipatti,45-60,"3,080",Permanently shifted,"1,575","1,505",-2.27
 Benipatti,61-75,"1,170",Permanently shifted,560,610,4.27
 Benipatti,75+,310,Permanently shifted,126,184,18.71
@@ -648,7 +648,7 @@ Khajauli,18-29,"1,189",Duplicate enrolment,578,611,2.78
 Khajauli,30-44,"1,539",Duplicate enrolment,784,755,-1.88
 Khajauli,45-60,425,Duplicate enrolment,206,219,3.06
 Khajauli,61-75,167,Duplicate enrolment,78,89,6.59
-Khajauli,75+,30,Duplicate enrolment,15,15,0.0
+Khajauli,75+,30,Duplicate enrolment,15,15,0
 Khajauli,18-29,"2,627",Permanently shifted,580,"2,047",55.84
 Khajauli,30-44,"4,661",Permanently shifted,"1,860","2,801",20.19
 Khajauli,45-60,"2,786",Permanently shifted,"1,437","1,349",-3.16
@@ -707,7 +707,7 @@ Madhubani,75+,"2,171",Deceased,"1,039","1,132",4.28
 Madhubani,18-29,"1,023",Duplicate enrolment,501,522,2.05
 Madhubani,30-44,"1,307",Duplicate enrolment,670,637,-2.52
 Madhubani,45-60,490,Duplicate enrolment,244,246,0.41
-Madhubani,61-75,224,Duplicate enrolment,84,140,25.0
+Madhubani,61-75,224,Duplicate enrolment,84,140,25
 Madhubani,75+,43,Duplicate enrolment,16,27,25.58
 Madhubani,18-29,"2,263",Permanently shifted,598,"1,665",47.15
 Madhubani,30-44,"4,784",Permanently shifted,"1,951","2,833",18.44
@@ -819,26 +819,26 @@ Nirmali,30-44,741,Untraceable,307,434,17.14
 Nirmali,45-60,361,Untraceable,181,180,-0.28
 Nirmali,61-75,97,Untraceable,46,51,5.15
 Nirmali,75+,30,Untraceable,10,20,33.33
-Pipra,18-29,211,Deceased,104,107,1.42
-Pipra,30-44,829,Deceased,373,456,10.01
-Pipra,45-60,"1,638",Deceased,751,887,8.3
-Pipra,61-75,"2,183",Deceased,"1,055","1,128",3.34
-Pipra,75+,"1,447",Deceased,624,823,13.75
-Pipra,18-29,"1,211",Duplicate enrolment,625,586,-3.22
-Pipra,30-44,"1,219",Duplicate enrolment,644,575,-5.66
-Pipra,45-60,433,Duplicate enrolment,196,237,9.47
-Pipra,61-75,92,Duplicate enrolment,34,58,26.09
-Pipra,75+,10,Duplicate enrolment,3,7,40.0
-Pipra,18-29,"2,853",Permanently shifted,811,"2,042",43.15
-Pipra,30-44,"4,481",Permanently shifted,"1,764","2,717",21.27
-Pipra,45-60,"2,683",Permanently shifted,"1,289","1,394",3.91
-Pipra,61-75,654,Permanently shifted,338,316,-3.36
-Pipra,75+,155,Permanently shifted,64,91,17.42
-Pipra,18-29,521,Untraceable,180,341,30.9
-Pipra,30-44,681,Untraceable,281,400,17.47
-Pipra,45-60,359,Untraceable,167,192,6.96
-Pipra,61-75,99,Untraceable,47,52,5.05
-Pipra,75+,44,Untraceable,17,27,22.73
+"Pipra, Supaul",18-29,211,Deceased,104,107,1.42
+"Pipra, Supaul",30-44,829,Deceased,373,456,10.01
+"Pipra, Supaul",45-60,"1,638",Deceased,751,887,8.3
+"Pipra, Supaul",61-75,"2,183",Deceased,"1,055","1,128",3.34
+"Pipra, Supaul",75+,"1,447",Deceased,624,823,13.75
+"Pipra, Supaul",18-29,"1,211",Duplicate enrolment,625,586,-3.22
+"Pipra, Supaul",30-44,"1,219",Duplicate enrolment,644,575,-5.66
+"Pipra, Supaul",45-60,433,Duplicate enrolment,196,237,9.47
+"Pipra, Supaul",61-75,92,Duplicate enrolment,34,58,26.09
+"Pipra, Supaul",75+,10,Duplicate enrolment,3,7,40
+"Pipra, Supaul",18-29,"2,853",Permanently shifted,811,"2,042",43.15
+"Pipra, Supaul",30-44,"4,481",Permanently shifted,"1,764","2,717",21.27
+"Pipra, Supaul",45-60,"2,683",Permanently shifted,"1,289","1,394",3.91
+"Pipra, Supaul",61-75,654,Permanently shifted,338,316,-3.36
+"Pipra, Supaul",75+,155,Permanently shifted,64,91,17.42
+"Pipra, Supaul",18-29,521,Untraceable,180,341,30.9
+"Pipra, Supaul",30-44,681,Untraceable,281,400,17.47
+"Pipra, Supaul",45-60,359,Untraceable,167,192,6.96
+"Pipra, Supaul",61-75,99,Untraceable,47,52,5.05
+"Pipra, Supaul",75+,44,Untraceable,17,27,22.73
 Supaul,18-29,240,Deceased,115,125,4.17
 Supaul,30-44,813,Deceased,352,461,13.41
 Supaul,45-60,"1,604",Deceased,737,867,8.1
@@ -857,7 +857,7 @@ Supaul,75+,283,Permanently shifted,122,161,13.78
 Supaul,18-29,"1,006",Untraceable,395,611,21.47
 Supaul,30-44,"1,265",Untraceable,554,711,12.41
 Supaul,45-60,640,Untraceable,292,348,8.75
-Supaul,61-75,210,Untraceable,105,105,0.0
+Supaul,61-75,210,Untraceable,105,105,0
 Supaul,75+,56,Untraceable,20,36,28.57
 Triveniganj (SC),18-29,248,Deceased,126,122,-1.61
 Triveniganj (SC),30-44,849,Deceased,407,442,4.12
@@ -878,7 +878,7 @@ Triveniganj (SC),18-29,"1,541",Untraceable,670,871,13.04
 Triveniganj (SC),30-44,"1,184",Untraceable,482,702,18.58
 Triveniganj (SC),45-60,466,Untraceable,216,250,7.3
 Triveniganj (SC),61-75,126,Untraceable,58,68,7.94
-Triveniganj (SC),75+,25,Untraceable,9,16,28.0
+Triveniganj (SC),75+,25,Untraceable,9,16,28
 Chhatapur,18-29,282,Deceased,137,145,2.84
 Chhatapur,30-44,916,Deceased,428,488,6.55
 Chhatapur,45-60,"2,209",Deceased,"1,002","1,207",9.28
@@ -891,7 +891,7 @@ Chhatapur,61-75,104,Duplicate enrolment,48,56,7.69
 Chhatapur,75+,15,Duplicate enrolment,7,8,6.67
 Chhatapur,18-29,"3,947",Permanently shifted,"1,261","2,686",36.1
 Chhatapur,30-44,"4,369",Permanently shifted,"1,635","2,734",25.15
-Chhatapur,45-60,"2,298",Permanently shifted,"1,149","1,149",0.0
+Chhatapur,45-60,"2,298",Permanently shifted,"1,149","1,149",0
 Chhatapur,61-75,659,Permanently shifted,364,295,-10.47
 Chhatapur,75+,153,Permanently shifted,73,80,4.58
 Chhatapur,18-29,"2,943",Untraceable,"1,198","1,745",18.59
@@ -901,7 +901,7 @@ Chhatapur,61-75,424,Untraceable,179,245,15.57
 Chhatapur,75+,132,Untraceable,44,88,33.33
 Narpatganj,18-29,352,Deceased,168,184,4.55
 Narpatganj,30-44,"1,506",Deceased,721,785,4.25
-Narpatganj,45-60,"3,376",Deceased,"1,536","1,840",9.0
+Narpatganj,45-60,"3,376",Deceased,"1,536","1,840",9
 Narpatganj,61-75,"4,809",Deceased,"2,351","2,458",2.22
 Narpatganj,75+,"3,670",Deceased,"1,823","1,847",0.65
 Narpatganj,18-29,980,Duplicate enrolment,538,442,-9.8
@@ -958,7 +958,7 @@ Forbesganj,18-29,608,Untraceable,313,295,-2.96
 Forbesganj,30-44,"1,123",Untraceable,531,592,5.43
 Forbesganj,45-60,390,Untraceable,188,202,3.59
 Forbesganj,61-75,134,Untraceable,77,57,-14.93
-Forbesganj,75+,30,Untraceable,12,18,20.0
+Forbesganj,75+,30,Untraceable,12,18,20
 Araria,18-29,419,Deceased,213,206,-1.67
 Araria,30-44,"1,426",Deceased,718,708,-0.7
 Araria,45-60,"2,467",Deceased,"1,124","1,343",8.88
@@ -977,7 +977,7 @@ Araria,75+,190,Permanently shifted,87,103,8.42
 Araria,18-29,812,Untraceable,367,445,9.61
 Araria,30-44,"1,029",Untraceable,480,549,6.71
 Araria,45-60,448,Untraceable,213,235,4.91
-Araria,61-75,175,Untraceable,84,91,4.0
+Araria,61-75,175,Untraceable,84,91,4
 Araria,75+,78,Untraceable,42,36,-7.69
 Jokihat,18-29,361,Deceased,181,180,-0.28
 Jokihat,30-44,"1,554",Deceased,707,847,9.01
@@ -1018,7 +1018,7 @@ Sikti,18-29,370,Untraceable,160,210,13.51
 Sikti,30-44,711,Untraceable,317,394,10.83
 Sikti,45-60,355,Untraceable,164,191,7.61
 Sikti,61-75,136,Untraceable,56,80,17.65
-Sikti,75+,44,Untraceable,22,22,0.0
+Sikti,75+,44,Untraceable,22,22,0
 Bahadurganj,18-29,305,Deceased,120,185,21.31
 Bahadurganj,30-44,"1,156",Deceased,508,648,12.11
 Bahadurganj,45-60,"2,318",Deceased,"1,016","1,302",12.34
@@ -1046,20 +1046,20 @@ Thakurganj,61-75,"3,046",Deceased,"1,369","1,677",10.11
 Thakurganj,75+,"1,660",Deceased,724,936,12.77
 Thakurganj,18-29,660,Duplicate enrolment,313,347,5.15
 Thakurganj,30-44,"1,220",Duplicate enrolment,602,618,1.31
-Thakurganj,45-60,380,Duplicate enrolment,171,209,10.0
+Thakurganj,45-60,380,Duplicate enrolment,171,209,10
 Thakurganj,61-75,87,Duplicate enrolment,43,44,1.15
 Thakurganj,75+,17,Duplicate enrolment,7,10,17.65
 Thakurganj,18-29,"3,230",Permanently shifted,349,"2,881",78.39
 Thakurganj,30-44,"4,922",Permanently shifted,"1,311","3,611",46.73
 Thakurganj,45-60,"1,873",Permanently shifted,894,979,4.54
 Thakurganj,61-75,489,Permanently shifted,252,237,-3.07
-Thakurganj,75+,100,Permanently shifted,36,64,28.0
+Thakurganj,75+,100,Permanently shifted,36,64,28
 Thakurganj,18-29,"1,979",Untraceable,817,"1,162",17.43
 Thakurganj,30-44,"3,591",Untraceable,"1,556","2,035",13.34
 Thakurganj,45-60,"1,500",Untraceable,681,819,9.2
 Thakurganj,61-75,588,Untraceable,239,349,18.71
 Thakurganj,75+,188,Untraceable,55,133,41.49
-Kishanganj,18-29,372,Deceased,186,186,0.0
+Kishanganj,18-29,372,Deceased,186,186,0
 Kishanganj,30-44,"1,769",Deceased,879,890,0.62
 Kishanganj,45-60,"3,110",Deceased,"1,484","1,626",4.57
 Kishanganj,61-75,"4,422",Deceased,"2,285","2,137",-3.35
@@ -1086,7 +1086,7 @@ Kochadhaman,61-75,"3,271",Deceased,"1,582","1,689",3.27
 Kochadhaman,75+,"2,251",Deceased,"1,018","1,233",9.55
 Kochadhaman,18-29,885,Duplicate enrolment,429,456,3.05
 Kochadhaman,30-44,"1,874",Duplicate enrolment,"1,061",813,-13.23
-Kochadhaman,45-60,720,Duplicate enrolment,360,360,0.0
+Kochadhaman,45-60,720,Duplicate enrolment,360,360,0
 Kochadhaman,61-75,159,Duplicate enrolment,76,83,4.4
 Kochadhaman,75+,37,Duplicate enrolment,10,27,45.95
 Kochadhaman,18-29,"3,537",Permanently shifted,580,"2,957",67.2
@@ -1168,7 +1168,7 @@ Banmankhi (SC),18-29,727,Duplicate enrolment,342,385,5.91
 Banmankhi (SC),30-44,"1,032",Duplicate enrolment,546,486,-5.81
 Banmankhi (SC),45-60,315,Duplicate enrolment,151,164,4.13
 Banmankhi (SC),61-75,83,Duplicate enrolment,45,38,-8.43
-Banmankhi (SC),75+,25,Duplicate enrolment,12,13,4.0
+Banmankhi (SC),75+,25,Duplicate enrolment,12,13,4
 Banmankhi (SC),18-29,"3,558",Permanently shifted,"1,067","2,491",40.02
 Banmankhi (SC),30-44,"8,509",Permanently shifted,"3,203","5,306",24.72
 Banmankhi (SC),45-60,"4,422",Permanently shifted,"2,222","2,200",-0.5
@@ -1188,7 +1188,7 @@ Rupauli,18-29,718,Duplicate enrolment,352,366,1.95
 Rupauli,30-44,"1,662",Duplicate enrolment,825,837,0.72
 Rupauli,45-60,680,Duplicate enrolment,347,333,-2.06
 Rupauli,61-75,167,Duplicate enrolment,86,81,-2.99
-Rupauli,75+,38,Duplicate enrolment,19,19,0.0
+Rupauli,75+,38,Duplicate enrolment,19,19,0
 Rupauli,18-29,"2,812",Permanently shifted,852,"1,960",39.4
 Rupauli,30-44,"7,269",Permanently shifted,"2,776","4,493",23.62
 Rupauli,45-60,"4,581",Permanently shifted,"2,271","2,310",0.85
@@ -1201,7 +1201,7 @@ Rupauli,61-75,490,Untraceable,210,280,14.29
 Rupauli,75+,149,Untraceable,44,105,40.94
 Dhamdaha,18-29,352,Deceased,203,149,-15.34
 Dhamdaha,30-44,"2,247",Deceased,"1,156","1,091",-2.89
-Dhamdaha,45-60,"4,798",Deceased,"2,447","2,351",-2.0
+Dhamdaha,45-60,"4,798",Deceased,"2,447","2,351",-2
 Dhamdaha,61-75,"5,357",Deceased,"2,752","2,605",-2.74
 Dhamdaha,75+,"3,294",Deceased,"1,579","1,715",4.13
 Dhamdaha,18-29,983,Duplicate enrolment,512,471,-4.17
@@ -1258,7 +1258,7 @@ Katihar,18-29,"1,306",Untraceable,535,771,18.07
 Katihar,30-44,"3,471",Untraceable,"1,624","1,847",6.42
 Katihar,45-60,"1,792",Untraceable,950,842,-6.03
 Katihar,61-75,728,Untraceable,370,358,-1.65
-Katihar,75+,200,Untraceable,84,116,16.0
+Katihar,75+,200,Untraceable,84,116,16
 Kadwa,18-29,359,Deceased,152,207,15.32
 Kadwa,30-44,"1,810",Deceased,946,864,-4.53
 Kadwa,45-60,"2,812",Deceased,"1,323","1,489",5.9
@@ -1268,7 +1268,7 @@ Kadwa,18-29,"1,052",Duplicate enrolment,514,538,2.28
 Kadwa,30-44,"1,728",Duplicate enrolment,858,870,0.69
 Kadwa,45-60,344,Duplicate enrolment,159,185,7.56
 Kadwa,61-75,112,Duplicate enrolment,61,51,-8.93
-Kadwa,75+,20,Duplicate enrolment,11,9,-10.0
+Kadwa,75+,20,Duplicate enrolment,11,9,-10
 Kadwa,18-29,"3,521",Permanently shifted,799,"2,722",54.62
 Kadwa,30-44,"6,960",Permanently shifted,"2,337","4,623",32.84
 Kadwa,45-60,"2,067",Permanently shifted,951,"1,116",7.98
@@ -1295,12 +1295,12 @@ Balrampur,45-60,"2,174",Permanently shifted,"1,065","1,109",2.02
 Balrampur,61-75,735,Permanently shifted,368,367,-0.14
 Balrampur,75+,184,Permanently shifted,68,116,26.09
 Balrampur,18-29,"1,479",Untraceable,590,889,20.22
-Balrampur,30-44,"2,245",Untraceable,999,"1,246",11.0
+Balrampur,30-44,"2,245",Untraceable,999,"1,246",11
 Balrampur,45-60,698,Untraceable,329,369,5.73
 Balrampur,61-75,266,Untraceable,118,148,11.28
 Balrampur,75+,85,Untraceable,27,58,36.47
 Pranpur,18-29,256,Deceased,121,135,5.47
-Pranpur,30-44,"1,098",Deceased,538,560,2.0
+Pranpur,30-44,"1,098",Deceased,538,560,2
 Pranpur,45-60,"1,679",Deceased,782,897,6.85
 Pranpur,61-75,"2,331",Deceased,"1,134","1,197",2.7
 Pranpur,75+,"1,157",Deceased,507,650,12.36
@@ -1308,7 +1308,7 @@ Pranpur,18-29,707,Duplicate enrolment,285,422,19.38
 Pranpur,30-44,927,Duplicate enrolment,463,464,0.11
 Pranpur,45-60,148,Duplicate enrolment,69,79,6.76
 Pranpur,61-75,43,Duplicate enrolment,18,25,16.28
-Pranpur,75+,8,Duplicate enrolment,4,4,0.0
+Pranpur,75+,8,Duplicate enrolment,4,4,0
 Pranpur,18-29,"2,390",Permanently shifted,540,"1,850",54.81
 Pranpur,30-44,"3,894",Permanently shifted,"1,383","2,511",28.97
 Pranpur,45-60,"1,241",Permanently shifted,587,654,5.4
@@ -1377,7 +1377,7 @@ Korha (SC),75+,156,Permanently shifted,56,100,28.21
 Korha (SC),18-29,201,Untraceable,76,125,24.38
 Korha (SC),30-44,224,Untraceable,97,127,13.39
 Korha (SC),45-60,77,Untraceable,32,45,16.88
-Korha (SC),61-75,34,Untraceable,17,17,0.0
+Korha (SC),61-75,34,Untraceable,17,17,0
 Korha (SC),75+,18,Untraceable,5,13,44.44
 Alamnagar,18-29,364,Deceased,191,173,-4.95
 Alamnagar,30-44,"1,617",Deceased,765,852,5.38
@@ -1398,7 +1398,7 @@ Alamnagar,18-29,561,Untraceable,226,335,19.43
 Alamnagar,30-44,621,Untraceable,292,329,5.96
 Alamnagar,45-60,237,Untraceable,131,106,-10.55
 Alamnagar,61-75,75,Untraceable,37,38,1.33
-Alamnagar,75+,24,Untraceable,9,15,25.0
+Alamnagar,75+,24,Untraceable,9,15,25
 Bihariganj,18-29,256,Deceased,118,138,7.81
 Bihariganj,30-44,"1,151",Deceased,560,591,2.69
 Bihariganj,45-60,"2,259",Deceased,"1,109","1,150",1.81
@@ -1427,8 +1427,8 @@ Singheshwar (SC),75+,"1,406",Deceased,711,695,-1.14
 Singheshwar (SC),18-29,954,Duplicate enrolment,509,445,-6.71
 Singheshwar (SC),30-44,"1,143",Duplicate enrolment,578,565,-1.14
 Singheshwar (SC),45-60,322,Duplicate enrolment,160,162,0.62
-Singheshwar (SC),61-75,78,Duplicate enrolment,39,39,0.0
-Singheshwar (SC),75+,16,Duplicate enrolment,10,6,-25.0
+Singheshwar (SC),61-75,78,Duplicate enrolment,39,39,0
+Singheshwar (SC),75+,16,Duplicate enrolment,10,6,-25
 Singheshwar (SC),18-29,"3,185",Permanently shifted,"1,025","2,160",35.64
 Singheshwar (SC),30-44,"4,173",Permanently shifted,"1,466","2,707",29.74
 Singheshwar (SC),45-60,"1,512",Permanently shifted,740,772,2.12
@@ -1519,7 +1519,7 @@ Simri Bakhtiarpur,30-44,"2,472",Untraceable,"1,105","1,367",10.6
 Simri Bakhtiarpur,45-60,871,Untraceable,452,419,-3.79
 Simri Bakhtiarpur,61-75,280,Untraceable,125,155,10.71
 Simri Bakhtiarpur,75+,70,Untraceable,30,40,14.29
-Mahishi,18-29,254,Deceased,127,127,0.0
+Mahishi,18-29,254,Deceased,127,127,0
 Mahishi,30-44,"1,330",Deceased,688,642,-3.46
 Mahishi,45-60,"2,157",Deceased,"1,030","1,127",4.5
 Mahishi,61-75,"2,825",Deceased,"1,349","1,476",4.5
@@ -1568,7 +1568,7 @@ Gaura Bauram,18-29,"1,027",Duplicate enrolment,462,565,10.03
 Gaura Bauram,30-44,"1,105",Duplicate enrolment,527,578,4.62
 Gaura Bauram,45-60,489,Duplicate enrolment,208,281,14.93
 Gaura Bauram,61-75,162,Duplicate enrolment,64,98,20.99
-Gaura Bauram,75+,25,Duplicate enrolment,14,11,-12.0
+Gaura Bauram,75+,25,Duplicate enrolment,14,11,-12
 Gaura Bauram,18-29,"2,135",Permanently shifted,562,"1,573",47.35
 Gaura Bauram,30-44,"3,504",Permanently shifted,"1,196","2,308",31.74
 Gaura Bauram,45-60,"2,365",Permanently shifted,"1,043","1,322",11.8
@@ -1593,14 +1593,14 @@ Benipur,18-29,"1,611",Permanently shifted,381,"1,230",52.7
 Benipur,30-44,"2,741",Permanently shifted,972,"1,769",29.08
 Benipur,45-60,"1,804",Permanently shifted,916,888,-1.55
 Benipur,61-75,491,Permanently shifted,245,246,0.2
-Benipur,75+,120,Permanently shifted,51,69,15.0
+Benipur,75+,120,Permanently shifted,51,69,15
 Benipur,18-29,833,Untraceable,288,545,30.85
 Benipur,30-44,"1,390",Untraceable,616,774,11.37
 Benipur,45-60,927,Untraceable,452,475,2.48
 Benipur,61-75,270,Untraceable,121,149,10.37
 Benipur,75+,79,Untraceable,33,46,16.46
 Alinagar,18-29,214,Deceased,89,125,16.82
-Alinagar,30-44,654,Deceased,327,327,0.0
+Alinagar,30-44,654,Deceased,327,327,0
 Alinagar,45-60,"1,186",Deceased,575,611,3.04
 Alinagar,61-75,"1,744",Deceased,808,936,7.34
 Alinagar,75+,"1,224",Deceased,542,682,11.44
@@ -1608,7 +1608,7 @@ Alinagar,18-29,623,Duplicate enrolment,268,355,13.96
 Alinagar,30-44,706,Duplicate enrolment,347,359,1.7
 Alinagar,45-60,269,Duplicate enrolment,116,153,13.75
 Alinagar,61-75,85,Duplicate enrolment,40,45,5.88
-Alinagar,75+,8,Duplicate enrolment,2,6,50.0
+Alinagar,75+,8,Duplicate enrolment,2,6,50
 Alinagar,18-29,"1,478",Permanently shifted,345,"1,133",53.32
 Alinagar,30-44,"2,269",Permanently shifted,763,"1,506",32.75
 Alinagar,45-60,"1,544",Permanently shifted,739,805,4.27
@@ -1616,7 +1616,7 @@ Alinagar,61-75,476,Permanently shifted,217,259,8.82
 Alinagar,75+,102,Permanently shifted,39,63,23.53
 Alinagar,18-29,427,Untraceable,162,265,24.12
 Alinagar,30-44,732,Untraceable,343,389,6.28
-Alinagar,45-60,600,Untraceable,297,303,1.0
+Alinagar,45-60,600,Untraceable,297,303,1
 Alinagar,61-75,196,Untraceable,93,103,5.1
 Alinagar,75+,42,Untraceable,24,18,-14.29
 Darbhanga Rural,18-29,256,Deceased,122,134,4.69
@@ -1646,18 +1646,18 @@ Darbhanga,61-75,"2,410",Deceased,"1,292","1,118",-7.22
 Darbhanga,75+,"1,779",Deceased,919,860,-3.32
 Darbhanga,18-29,375,Duplicate enrolment,193,182,-2.93
 Darbhanga,30-44,383,Duplicate enrolment,208,175,-8.62
-Darbhanga,45-60,200,Duplicate enrolment,107,93,-7.0
+Darbhanga,45-60,200,Duplicate enrolment,107,93,-7
 Darbhanga,61-75,79,Duplicate enrolment,46,33,-16.46
-Darbhanga,75+,10,Duplicate enrolment,6,4,-20.0
+Darbhanga,75+,10,Duplicate enrolment,6,4,-20
 Darbhanga,18-29,782,Permanently shifted,216,566,44.76
 Darbhanga,30-44,"2,060",Permanently shifted,710,"1,350",31.07
 Darbhanga,45-60,"1,478",Permanently shifted,765,713,-3.52
 Darbhanga,61-75,609,Permanently shifted,324,285,-6.4
 Darbhanga,75+,138,Permanently shifted,77,61,-11.59
-Darbhanga,18-29,25,Untraceable,11,14,12.0
+Darbhanga,18-29,25,Untraceable,11,14,12
 Darbhanga,30-44,57,Untraceable,25,32,12.28
 Darbhanga,45-60,62,Untraceable,29,33,6.45
-Darbhanga,61-75,25,Untraceable,15,10,-20.0
+Darbhanga,61-75,25,Untraceable,15,10,-20
 Darbhanga,75+,7,Untraceable,4,3,-14.29
 Hayaghat,18-29,111,Deceased,40,71,27.93
 Hayaghat,30-44,466,Deceased,222,244,4.72
@@ -1678,7 +1678,7 @@ Hayaghat,18-29,357,Untraceable,144,213,19.33
 Hayaghat,30-44,821,Untraceable,381,440,7.19
 Hayaghat,45-60,572,Untraceable,288,284,-0.7
 Hayaghat,61-75,233,Untraceable,111,122,4.72
-Hayaghat,75+,50,Untraceable,21,29,16.0
+Hayaghat,75+,50,Untraceable,21,29,16
 Bahadurpur,18-29,251,Deceased,136,115,-8.37
 Bahadurpur,30-44,881,Deceased,488,393,-10.78
 Bahadurpur,45-60,"1,586",Deceased,851,735,-7.31
@@ -1787,8 +1787,8 @@ Minapur,75+,"1,608",Deceased,729,879,9.33
 Minapur,18-29,729,Duplicate enrolment,371,358,-1.78
 Minapur,30-44,"1,078",Duplicate enrolment,545,533,-1.11
 Minapur,45-60,321,Duplicate enrolment,135,186,15.89
-Minapur,61-75,100,Duplicate enrolment,51,49,-2.0
-Minapur,75+,25,Duplicate enrolment,11,14,12.0
+Minapur,61-75,100,Duplicate enrolment,51,49,-2
+Minapur,75+,25,Duplicate enrolment,11,14,12
 Minapur,18-29,"2,643",Permanently shifted,978,"1,665",25.99
 Minapur,30-44,"3,102",Permanently shifted,"1,300","1,802",16.18
 Minapur,45-60,"1,326",Permanently shifted,651,675,1.81
@@ -1803,12 +1803,12 @@ Bochaha (SC),18-29,253,Deceased,140,113,-10.67
 Bochaha (SC),30-44,"1,251",Deceased,737,514,-17.83
 Bochaha (SC),45-60,"2,037",Deceased,"1,005","1,032",1.33
 Bochaha (SC),61-75,"3,193",Deceased,"1,617","1,576",-1.28
-Bochaha (SC),75+,"1,806",Deceased,894,912,1.0
-Bochaha (SC),18-29,546,Duplicate enrolment,273,273,0.0
+Bochaha (SC),75+,"1,806",Deceased,894,912,1
+Bochaha (SC),18-29,546,Duplicate enrolment,273,273,0
 Bochaha (SC),30-44,"1,026",Duplicate enrolment,539,487,-5.07
 Bochaha (SC),45-60,285,Duplicate enrolment,134,151,5.96
 Bochaha (SC),61-75,97,Duplicate enrolment,45,52,7.22
-Bochaha (SC),75+,26,Duplicate enrolment,13,13,0.0
+Bochaha (SC),75+,26,Duplicate enrolment,13,13,0
 Bochaha (SC),18-29,"1,810",Permanently shifted,532,"1,278",41.22
 Bochaha (SC),30-44,"4,029",Permanently shifted,"1,661","2,368",17.55
 Bochaha (SC),45-60,"1,903",Permanently shifted,936,967,1.63
@@ -1827,8 +1827,8 @@ Sakra (SC),75+,"1,475",Deceased,688,787,6.71
 Sakra (SC),18-29,546,Duplicate enrolment,251,295,8.06
 Sakra (SC),30-44,537,Duplicate enrolment,256,281,4.66
 Sakra (SC),45-60,128,Duplicate enrolment,62,66,3.13
-Sakra (SC),61-75,42,Duplicate enrolment,21,21,0.0
-Sakra (SC),75+,8,Duplicate enrolment,3,5,25.0
+Sakra (SC),61-75,42,Duplicate enrolment,21,21,0
+Sakra (SC),75+,8,Duplicate enrolment,3,5,25
 Sakra (SC),18-29,"1,645",Permanently shifted,395,"1,250",51.98
 Sakra (SC),30-44,"2,617",Permanently shifted,"1,013","1,604",22.58
 Sakra (SC),45-60,"1,280",Permanently shifted,643,637,-0.47
@@ -1842,12 +1842,12 @@ Sakra (SC),75+,57,Untraceable,22,35,22.81
 Kurhani,18-29,276,Deceased,126,150,8.7
 Kurhani,30-44,"1,517",Deceased,825,692,-8.77
 Kurhani,45-60,"2,365",Deceased,"1,120","1,245",5.29
-Kurhani,61-75,"3,639",Deceased,"1,674","1,965",8.0
+Kurhani,61-75,"3,639",Deceased,"1,674","1,965",8
 Kurhani,75+,"2,710",Deceased,"1,199","1,511",11.51
 Kurhani,18-29,760,Duplicate enrolment,347,413,8.68
 Kurhani,30-44,"1,133",Duplicate enrolment,580,553,-2.38
 Kurhani,45-60,307,Duplicate enrolment,138,169,10.1
-Kurhani,61-75,116,Duplicate enrolment,58,58,0.0
+Kurhani,61-75,116,Duplicate enrolment,58,58,0
 Kurhani,75+,17,Duplicate enrolment,2,15,76.47
 Kurhani,18-29,"1,985",Permanently shifted,437,"1,548",55.97
 Kurhani,30-44,"3,875",Permanently shifted,"1,524","2,351",21.34
@@ -1859,7 +1859,7 @@ Kurhani,30-44,"1,522",Untraceable,710,812,6.7
 Kurhani,45-60,652,Untraceable,317,335,2.76
 Kurhani,61-75,176,Untraceable,76,100,13.64
 Kurhani,75+,83,Untraceable,32,51,22.89
-Muzaffarpur,18-29,100,Deceased,57,43,-14.0
+Muzaffarpur,18-29,100,Deceased,57,43,-14
 Muzaffarpur,30-44,932,Deceased,586,346,-25.75
 Muzaffarpur,45-60,"1,964",Deceased,"1,111",853,-13.14
 Muzaffarpur,61-75,"2,972",Deceased,"1,673","1,299",-12.58
@@ -1904,7 +1904,7 @@ Baruraj,30-44,"1,239",Deceased,672,567,-8.47
 Baruraj,45-60,"1,988",Deceased,953,"1,035",4.12
 Baruraj,61-75,"2,962",Deceased,"1,353","1,609",8.64
 Baruraj,75+,"2,030",Deceased,934,"1,096",7.98
-Baruraj,18-29,800,Duplicate enrolment,328,472,18.0
+Baruraj,18-29,800,Duplicate enrolment,328,472,18
 Baruraj,30-44,"1,194",Duplicate enrolment,616,578,-3.18
 Baruraj,45-60,273,Duplicate enrolment,129,144,5.49
 Baruraj,61-75,92,Duplicate enrolment,48,44,-4.35
@@ -1918,7 +1918,7 @@ Baruraj,18-29,946,Untraceable,367,579,22.41
 Baruraj,30-44,"1,999",Untraceable,993,"1,006",0.65
 Baruraj,45-60,821,Untraceable,416,405,-1.34
 Baruraj,61-75,245,Untraceable,95,150,22.45
-Baruraj,75+,85,Untraceable,34,51,20.0
+Baruraj,75+,85,Untraceable,34,51,20
 Paroo,18-29,265,Deceased,125,140,5.66
 Paroo,30-44,"1,535",Deceased,847,688,-10.36
 Paroo,45-60,"2,584",Deceased,"1,238","1,346",4.18
@@ -1928,7 +1928,7 @@ Paroo,18-29,"1,077",Duplicate enrolment,447,630,16.99
 Paroo,30-44,"1,634",Duplicate enrolment,809,825,0.98
 Paroo,45-60,470,Duplicate enrolment,205,265,12.77
 Paroo,61-75,138,Duplicate enrolment,61,77,11.59
-Paroo,75+,40,Duplicate enrolment,16,24,20.0
+Paroo,75+,40,Duplicate enrolment,16,24,20
 Paroo,18-29,"2,856",Permanently shifted,672,"2,184",52.94
 Paroo,30-44,"4,977",Permanently shifted,"2,077","2,900",16.54
 Paroo,45-60,"2,374",Permanently shifted,"1,138","1,236",4.13
@@ -1938,7 +1938,7 @@ Paroo,18-29,768,Untraceable,291,477,24.22
 Paroo,30-44,"1,452",Untraceable,665,787,8.4
 Paroo,45-60,628,Untraceable,301,327,4.14
 Paroo,61-75,211,Untraceable,89,122,15.64
-Paroo,75+,75,Untraceable,24,51,36.0
+Paroo,75+,75,Untraceable,24,51,36
 Sahebganj,18-29,311,Deceased,136,175,12.54
 Sahebganj,30-44,"1,588",Deceased,864,724,-8.82
 Sahebganj,45-60,"2,744",Deceased,"1,379","1,365",-0.51
@@ -2033,7 +2033,7 @@ Kuchaikote,18-29,"6,867",Permanently shifted,"1,563","5,304",54.48
 Kuchaikote,30-44,"11,314",Permanently shifted,"3,823","7,491",32.42
 Kuchaikote,45-60,"4,715",Permanently shifted,"2,151","2,564",8.76
 Kuchaikote,61-75,"1,503",Permanently shifted,691,812,8.05
-Kuchaikote,75+,352,Permanently shifted,132,220,25.0
+Kuchaikote,75+,352,Permanently shifted,132,220,25
 Kuchaikote,18-29,"3,316",Untraceable,"1,564","1,752",5.67
 Kuchaikote,30-44,"7,425",Untraceable,"3,274","4,151",11.81
 Kuchaikote,45-60,"3,029",Untraceable,"1,390","1,639",8.22
@@ -2070,7 +2070,7 @@ Hathua,45-60,989,Duplicate enrolment,388,601,21.54
 Hathua,61-75,295,Duplicate enrolment,128,167,13.22
 Hathua,75+,45,Duplicate enrolment,17,28,24.44
 Hathua,18-29,"5,418",Permanently shifted,"1,033","4,385",61.87
-Hathua,30-44,"9,113",Permanently shifted,"2,916","6,197",36.0
+Hathua,30-44,"9,113",Permanently shifted,"2,916","6,197",36
 Hathua,45-60,"4,835",Permanently shifted,"2,252","2,583",6.85
 Hathua,61-75,"1,372",Permanently shifted,606,766,11.66
 Hathua,75+,313,Permanently shifted,135,178,13.74
@@ -2078,7 +2078,7 @@ Hathua,18-29,"1,973",Untraceable,935,"1,038",5.22
 Hathua,30-44,"4,161",Untraceable,"1,881","2,280",9.59
 Hathua,45-60,"1,939",Untraceable,936,"1,003",3.46
 Hathua,61-75,562,Untraceable,230,332,18.15
-Hathua,75+,150,Untraceable,51,99,32.0
+Hathua,75+,150,Untraceable,51,99,32
 Siwan,18-29,189,Deceased,96,93,-1.59
 Siwan,30-44,"1,204",Deceased,710,494,-17.94
 Siwan,45-60,"2,784",Deceased,"1,430","1,354",-2.73
@@ -2087,7 +2087,7 @@ Siwan,75+,"2,076",Deceased,"1,059","1,017",-2.02
 Siwan,18-29,539,Duplicate enrolment,278,261,-3.15
 Siwan,30-44,"1,046",Duplicate enrolment,553,493,-5.74
 Siwan,45-60,352,Duplicate enrolment,184,168,-4.55
-Siwan,61-75,116,Duplicate enrolment,58,58,0.0
+Siwan,61-75,116,Duplicate enrolment,58,58,0
 Siwan,75+,19,Duplicate enrolment,10,9,-5.26
 Siwan,18-29,"2,042",Permanently shifted,408,"1,634",60.04
 Siwan,30-44,"4,069",Permanently shifted,"1,386","2,683",31.88
@@ -2168,7 +2168,7 @@ Daraundha,18-29,"1,053",Duplicate enrolment,583,470,-10.73
 Daraundha,30-44,"1,531",Duplicate enrolment,762,769,0.46
 Daraundha,45-60,581,Duplicate enrolment,255,326,12.22
 Daraundha,61-75,182,Duplicate enrolment,76,106,16.48
-Daraundha,75+,34,Duplicate enrolment,17,17,0.0
+Daraundha,75+,34,Duplicate enrolment,17,17,0
 Daraundha,18-29,"3,783",Permanently shifted,866,"2,917",54.22
 Daraundha,30-44,"5,026",Permanently shifted,"1,620","3,406",35.54
 Daraundha,45-60,"2,257",Permanently shifted,956,"1,301",15.29
@@ -2177,7 +2177,7 @@ Daraundha,75+,193,Permanently shifted,78,115,19.17
 Daraundha,18-29,332,Untraceable,153,179,7.83
 Daraundha,30-44,624,Untraceable,314,310,-0.64
 Daraundha,45-60,374,Untraceable,190,184,-1.6
-Daraundha,61-75,160,Untraceable,84,76,-5.0
+Daraundha,61-75,160,Untraceable,84,76,-5
 Daraundha,75+,49,Untraceable,20,29,18.37
 Barharia,18-29,198,Deceased,105,93,-6.06
 Barharia,30-44,"1,280",Deceased,711,569,-11.09
@@ -2198,7 +2198,7 @@ Barharia,18-29,788,Untraceable,374,414,5.08
 Barharia,30-44,"1,195",Untraceable,557,638,6.78
 Barharia,45-60,614,Untraceable,323,291,-5.21
 Barharia,61-75,181,Untraceable,71,110,21.55
-Barharia,75+,75,Untraceable,33,42,12.0
+Barharia,75+,75,Untraceable,33,42,12
 Goriakothi,18-29,278,Deceased,126,152,9.35
 Goriakothi,30-44,"1,557",Deceased,851,706,-9.31
 Goriakothi,45-60,"3,467",Deceased,"1,737","1,730",-0.2
@@ -2208,10 +2208,10 @@ Goriakothi,18-29,796,Duplicate enrolment,420,376,-5.53
 Goriakothi,30-44,"1,768",Duplicate enrolment,847,921,4.19
 Goriakothi,45-60,678,Duplicate enrolment,304,374,10.32
 Goriakothi,61-75,178,Duplicate enrolment,90,88,-1.12
-Goriakothi,75+,32,Duplicate enrolment,16,16,0.0
+Goriakothi,75+,32,Duplicate enrolment,16,16,0
 Goriakothi,18-29,"3,254",Permanently shifted,580,"2,674",64.35
 Goriakothi,30-44,"4,288",Permanently shifted,"1,393","2,895",35.03
-Goriakothi,45-60,"2,183",Permanently shifted,"1,026","1,157",6.0
+Goriakothi,45-60,"2,183",Permanently shifted,"1,026","1,157",6
 Goriakothi,61-75,542,Permanently shifted,256,286,5.54
 Goriakothi,75+,106,Permanently shifted,44,62,16.98
 Goriakothi,18-29,713,Untraceable,338,375,5.19
@@ -2274,7 +2274,7 @@ Manjhi,30-44,"6,037",Permanently shifted,"2,207","3,830",26.88
 Manjhi,45-60,"3,696",Permanently shifted,"1,795","1,901",2.87
 Manjhi,61-75,"1,014",Permanently shifted,457,557,9.86
 Manjhi,75+,297,Permanently shifted,117,180,21.21
-Manjhi,18-29,200,Untraceable,89,111,11.0
+Manjhi,18-29,200,Untraceable,89,111,11
 Manjhi,30-44,495,Untraceable,233,262,5.86
 Manjhi,45-60,356,Untraceable,170,186,4.49
 Manjhi,61-75,121,Untraceable,54,67,10.74
@@ -2283,7 +2283,7 @@ Baniapur,18-29,221,Deceased,98,123,11.31
 Baniapur,30-44,"1,178",Deceased,546,632,7.3
 Baniapur,45-60,"2,574",Deceased,943,"1,631",26.73
 Baniapur,61-75,"3,672",Deceased,"1,253","2,419",31.75
-Baniapur,75+,"2,634",Deceased,777,"1,857",41.0
+Baniapur,75+,"2,634",Deceased,777,"1,857",41
 Baniapur,18-29,681,Duplicate enrolment,289,392,15.12
 Baniapur,30-44,"1,582",Duplicate enrolment,838,744,-5.94
 Baniapur,45-60,868,Duplicate enrolment,364,504,16.13
@@ -2428,13 +2428,13 @@ Sonepur,18-29,348,Duplicate enrolment,159,189,8.62
 Sonepur,30-44,582,Duplicate enrolment,343,239,-17.87
 Sonepur,45-60,317,Duplicate enrolment,160,157,-0.95
 Sonepur,61-75,82,Duplicate enrolment,32,50,21.95
-Sonepur,75+,25,Duplicate enrolment,11,14,12.0
+Sonepur,75+,25,Duplicate enrolment,11,14,12
 Sonepur,18-29,"1,614",Permanently shifted,335,"1,279",58.49
 Sonepur,30-44,"3,628",Permanently shifted,"1,369","2,259",24.53
 Sonepur,45-60,"2,431",Permanently shifted,"1,232","1,199",-1.36
 Sonepur,61-75,871,Permanently shifted,457,414,-4.94
 Sonepur,75+,230,Permanently shifted,107,123,6.96
-Sonepur,18-29,200,Untraceable,89,111,11.0
+Sonepur,18-29,200,Untraceable,89,111,11
 Sonepur,30-44,352,Untraceable,187,165,-6.25
 Sonepur,45-60,318,Untraceable,160,158,-0.63
 Sonepur,61-75,126,Untraceable,74,52,-17.46
@@ -2457,7 +2457,7 @@ Hajipur,75+,317,Permanently shifted,180,137,-13.56
 Hajipur,18-29,"2,062",Untraceable,979,"1,083",5.04
 Hajipur,30-44,"4,958",Untraceable,"2,405","2,553",2.99
 Hajipur,45-60,"2,911",Untraceable,"1,487","1,424",-2.16
-Hajipur,61-75,"1,217",Untraceable,645,572,-6.0
+Hajipur,61-75,"1,217",Untraceable,645,572,-6
 Hajipur,75+,516,Untraceable,263,253,-1.94
 Lalganj,18-29,270,Deceased,139,131,-2.96
 Lalganj,30-44,"1,494",Deceased,896,598,-19.95
@@ -2488,7 +2488,7 @@ Vaishali,18-29,799,Duplicate enrolment,384,415,3.88
 Vaishali,30-44,894,Duplicate enrolment,489,405,-9.4
 Vaishali,45-60,290,Duplicate enrolment,149,141,-2.76
 Vaishali,61-75,82,Duplicate enrolment,50,32,-21.95
-Vaishali,75+,30,Duplicate enrolment,18,12,-20.0
+Vaishali,75+,30,Duplicate enrolment,18,12,-20
 Vaishali,18-29,"2,446",Permanently shifted,572,"1,874",53.23
 Vaishali,30-44,"3,064",Permanently shifted,"1,161","1,903",24.22
 Vaishali,45-60,"1,943",Permanently shifted,"1,017",926,-4.68
@@ -2498,7 +2498,7 @@ Vaishali,18-29,"1,818",Untraceable,601,"1,217",33.88
 Vaishali,30-44,"1,587",Untraceable,732,855,7.75
 Vaishali,45-60,813,Untraceable,417,396,-2.58
 Vaishali,61-75,257,Untraceable,123,134,4.28
-Vaishali,75+,100,Untraceable,48,52,4.0
+Vaishali,75+,100,Untraceable,48,52,4
 Mahua,18-29,173,Deceased,87,86,-0.58
 Mahua,30-44,797,Deceased,481,316,-20.7
 Mahua,45-60,"1,544",Deceased,845,699,-9.46
@@ -2519,7 +2519,7 @@ Mahua,30-44,707,Untraceable,340,367,3.82
 Mahua,45-60,493,Untraceable,266,227,-7.91
 Mahua,61-75,186,Untraceable,102,84,-9.68
 Mahua,75+,52,Untraceable,22,30,15.38
-Raja Pakar (SC),18-29,186,Deceased,93,93,0.0
+Raja Pakar (SC),18-29,186,Deceased,93,93,0
 Raja Pakar (SC),30-44,917,Deceased,552,365,-20.39
 Raja Pakar (SC),45-60,"2,174",Deceased,"1,253",921,-15.27
 Raja Pakar (SC),61-75,"3,787",Deceased,"1,968","1,819",-3.93
@@ -2548,7 +2548,7 @@ Raghopur,18-29,786,Duplicate enrolment,362,424,7.89
 Raghopur,30-44,"1,526",Duplicate enrolment,878,648,-15.07
 Raghopur,45-60,504,Duplicate enrolment,265,239,-5.16
 Raghopur,61-75,188,Duplicate enrolment,89,99,5.32
-Raghopur,75+,62,Duplicate enrolment,31,31,0.0
+Raghopur,75+,62,Duplicate enrolment,31,31,0
 Raghopur,18-29,"2,642",Permanently shifted,957,"1,685",27.55
 Raghopur,30-44,"5,845",Permanently shifted,"2,552","3,293",12.68
 Raghopur,45-60,"3,670",Permanently shifted,"1,894","1,776",-3.22
@@ -2627,7 +2627,7 @@ Warisnagar,75+,"2,481",Deceased,"1,052","1,429",15.2
 Warisnagar,18-29,"1,674",Duplicate enrolment,745,929,10.99
 Warisnagar,30-44,"1,505",Duplicate enrolment,703,802,6.58
 Warisnagar,45-60,500,Duplicate enrolment,206,294,17.6
-Warisnagar,61-75,155,Duplicate enrolment,62,93,20.0
+Warisnagar,61-75,155,Duplicate enrolment,62,93,20
 Warisnagar,75+,33,Duplicate enrolment,12,21,27.27
 Warisnagar,18-29,"3,175",Permanently shifted,906,"2,269",42.93
 Warisnagar,30-44,"4,982",Permanently shifted,"1,936","3,046",22.28
@@ -2659,7 +2659,7 @@ Samastipur,30-44,"2,486",Untraceable,"1,132","1,354",8.93
 Samastipur,45-60,"1,185",Untraceable,620,565,-4.64
 Samastipur,61-75,426,Untraceable,196,230,7.98
 Samastipur,75+,91,Untraceable,34,57,25.27
-Ujiarpur,18-29,234,Deceased,117,117,0.0
+Ujiarpur,18-29,234,Deceased,117,117,0
 Ujiarpur,30-44,865,Deceased,420,445,2.89
 Ujiarpur,45-60,"1,316",Deceased,650,666,1.22
 Ujiarpur,61-75,"1,937",Deceased,912,"1,025",5.83
@@ -2678,7 +2678,7 @@ Ujiarpur,18-29,"1,040",Untraceable,480,560,7.69
 Ujiarpur,30-44,"1,179",Untraceable,505,674,14.33
 Ujiarpur,45-60,486,Untraceable,246,240,-1.23
 Ujiarpur,61-75,163,Untraceable,77,86,5.52
-Ujiarpur,75+,36,Untraceable,18,18,0.0
+Ujiarpur,75+,36,Untraceable,18,18,0
 Morwa,18-29,366,Deceased,194,172,-6.01
 Morwa,30-44,"1,385",Deceased,723,662,-4.4
 Morwa,45-60,"2,488",Deceased,"1,233","1,255",0.88
@@ -2693,9 +2693,9 @@ Morwa,18-29,"5,801",Permanently shifted,"2,227","3,574",23.22
 Morwa,30-44,"7,223",Permanently shifted,"2,949","4,274",18.34
 Morwa,45-60,"3,605",Permanently shifted,"1,834","1,771",-1.75
 Morwa,61-75,"1,108",Permanently shifted,539,569,2.71
-Morwa,75+,220,Permanently shifted,88,132,20.0
+Morwa,75+,220,Permanently shifted,88,132,20
 Morwa,18-29,654,Untraceable,292,362,10.7
-Morwa,30-44,846,Untraceable,368,478,13.0
+Morwa,30-44,846,Untraceable,368,478,13
 Morwa,45-60,451,Untraceable,220,231,2.44
 Morwa,61-75,135,Untraceable,60,75,11.11
 Morwa,75+,47,Untraceable,22,25,6.38
@@ -2753,12 +2753,12 @@ Bibhutipur,18-29,"2,329",Permanently shifted,842,"1,487",27.69
 Bibhutipur,30-44,"3,487",Permanently shifted,"1,391","2,096",20.22
 Bibhutipur,45-60,"1,690",Permanently shifted,838,852,0.83
 Bibhutipur,61-75,440,Permanently shifted,226,214,-2.73
-Bibhutipur,75+,84,Permanently shifted,42,42,0.0
+Bibhutipur,75+,84,Permanently shifted,42,42,0
 Bibhutipur,18-29,"1,399",Untraceable,590,809,15.65
 Bibhutipur,30-44,"1,687",Untraceable,740,947,12.27
 Bibhutipur,45-60,645,Untraceable,289,356,10.39
 Bibhutipur,61-75,183,Untraceable,83,100,9.29
-Bibhutipur,75+,50,Untraceable,14,36,44.0
+Bibhutipur,75+,50,Untraceable,14,36,44
 Rosera (SC),18-29,304,Deceased,167,137,-9.87
 Rosera (SC),30-44,"1,046",Deceased,527,519,-0.76
 Rosera (SC),45-60,"2,066",Deceased,"1,065","1,001",-3.1
@@ -2808,7 +2808,7 @@ Cheria Bariarpur,18-29,722,Duplicate enrolment,363,359,-0.55
 Cheria Bariarpur,30-44,720,Duplicate enrolment,374,346,-3.89
 Cheria Bariarpur,45-60,249,Duplicate enrolment,127,122,-2.01
 Cheria Bariarpur,61-75,86,Duplicate enrolment,46,40,-6.98
-Cheria Bariarpur,75+,25,Duplicate enrolment,11,14,12.0
+Cheria Bariarpur,75+,25,Duplicate enrolment,11,14,12
 Cheria Bariarpur,18-29,"2,212",Permanently shifted,609,"1,603",44.94
 Cheria Bariarpur,30-44,"3,030",Permanently shifted,"1,129","1,901",25.48
 Cheria Bariarpur,45-60,"1,325",Permanently shifted,660,665,0.38
@@ -2832,7 +2832,7 @@ Bachhwara,75+,29,Duplicate enrolment,18,11,-24.14
 Bachhwara,18-29,"1,732",Permanently shifted,411,"1,321",52.54
 Bachhwara,30-44,"3,286",Permanently shifted,"1,236","2,050",24.77
 Bachhwara,45-60,"1,691",Permanently shifted,842,849,0.41
-Bachhwara,61-75,414,Permanently shifted,207,207,0.0
+Bachhwara,61-75,414,Permanently shifted,207,207,0
 Bachhwara,75+,119,Permanently shifted,50,69,15.97
 Bachhwara,18-29,684,Untraceable,293,391,14.33
 Bachhwara,30-44,907,Untraceable,413,494,8.93
@@ -2876,9 +2876,9 @@ Matihani,61-75,"1,442",Permanently shifted,773,669,-7.21
 Matihani,75+,376,Permanently shifted,186,190,1.06
 Matihani,18-29,711,Untraceable,359,352,-0.98
 Matihani,30-44,849,Untraceable,370,479,12.84
-Matihani,45-60,474,Untraceable,237,237,0.0
+Matihani,45-60,474,Untraceable,237,237,0
 Matihani,61-75,132,Untraceable,63,69,4.55
-Matihani,75+,40,Untraceable,17,23,15.0
+Matihani,75+,40,Untraceable,17,23,15
 Sahebpur Kamal,18-29,212,Deceased,114,98,-7.55
 Sahebpur Kamal,30-44,815,Deceased,437,378,-7.24
 Sahebpur Kamal,45-60,"1,597",Deceased,789,808,1.19
@@ -2888,7 +2888,7 @@ Sahebpur Kamal,18-29,746,Duplicate enrolment,370,376,0.8
 Sahebpur Kamal,30-44,903,Duplicate enrolment,467,436,-3.43
 Sahebpur Kamal,45-60,346,Duplicate enrolment,150,196,13.29
 Sahebpur Kamal,61-75,116,Duplicate enrolment,56,60,3.45
-Sahebpur Kamal,75+,10,Duplicate enrolment,4,6,20.0
+Sahebpur Kamal,75+,10,Duplicate enrolment,4,6,20
 Sahebpur Kamal,18-29,"2,350",Permanently shifted,704,"1,646",40.09
 Sahebpur Kamal,30-44,"3,874",Permanently shifted,"1,383","2,491",28.6
 Sahebpur Kamal,45-60,"2,468",Permanently shifted,"1,216","1,252",1.46
@@ -2919,7 +2919,7 @@ Begusarai,30-44,"1,063",Untraceable,523,540,1.6
 Begusarai,45-60,679,Untraceable,373,306,-9.87
 Begusarai,61-75,235,Untraceable,120,115,-2.13
 Begusarai,75+,74,Untraceable,38,36,-2.7
-Bakhri (SC),18-29,182,Deceased,91,91,0.0
+Bakhri (SC),18-29,182,Deceased,91,91,0
 Bakhri (SC),30-44,773,Deceased,399,374,-3.23
 Bakhri (SC),45-60,"1,213",Deceased,609,604,-0.41
 Bakhri (SC),61-75,"1,830",Deceased,885,945,3.28
@@ -2939,7 +2939,7 @@ Bakhri (SC),30-44,"1,328",Untraceable,633,695,4.67
 Bakhri (SC),45-60,579,Untraceable,287,292,0.86
 Bakhri (SC),61-75,194,Untraceable,85,109,12.37
 Bakhri (SC),75+,39,Untraceable,15,24,23.08
-Alauli (SC),18-29,204,Deceased,102,102,0.0
+Alauli (SC),18-29,204,Deceased,102,102,0
 Alauli (SC),30-44,725,Deceased,359,366,0.97
 Alauli (SC),45-60,"1,386",Deceased,722,664,-4.18
 Alauli (SC),61-75,"2,296",Deceased,"1,153","1,143",-0.44
@@ -2957,7 +2957,7 @@ Alauli (SC),75+,85,Permanently shifted,37,48,12.94
 Alauli (SC),18-29,282,Untraceable,122,160,13.48
 Alauli (SC),30-44,369,Untraceable,171,198,7.32
 Alauli (SC),45-60,191,Untraceable,90,101,5.76
-Alauli (SC),61-75,60,Untraceable,27,33,10.0
+Alauli (SC),61-75,60,Untraceable,27,33,10
 Alauli (SC),75+,19,Untraceable,7,12,26.32
 Khagaria,18-29,237,Deceased,119,118,-0.42
 Khagaria,30-44,990,Deceased,536,454,-8.28
@@ -2988,7 +2988,7 @@ Beldaur,18-29,779,Duplicate enrolment,432,347,-10.91
 Beldaur,30-44,"1,187",Duplicate enrolment,647,540,-9.01
 Beldaur,45-60,366,Duplicate enrolment,185,181,-1.09
 Beldaur,61-75,109,Duplicate enrolment,59,50,-8.26
-Beldaur,75+,16,Duplicate enrolment,6,10,25.0
+Beldaur,75+,16,Duplicate enrolment,6,10,25
 Beldaur,18-29,"1,929",Permanently shifted,679,"1,250",29.6
 Beldaur,30-44,"3,519",Permanently shifted,"1,343","2,176",23.67
 Beldaur,45-60,"1,700",Permanently shifted,849,851,0.12
@@ -3028,13 +3028,13 @@ Bihpur,18-29,"1,120",Duplicate enrolment,406,714,27.5
 Bihpur,30-44,"1,986",Duplicate enrolment,"1,006",980,-1.31
 Bihpur,45-60,625,Duplicate enrolment,318,307,-1.76
 Bihpur,61-75,198,Duplicate enrolment,90,108,9.09
-Bihpur,75+,40,Duplicate enrolment,12,28,40.0
+Bihpur,75+,40,Duplicate enrolment,12,28,40
 Bihpur,18-29,"3,215",Permanently shifted,866,"2,349",46.13
 Bihpur,30-44,"5,689",Permanently shifted,"1,978","3,711",30.46
 Bihpur,45-60,"2,706",Permanently shifted,"1,237","1,469",8.57
 Bihpur,61-75,878,Permanently shifted,399,479,9.11
 Bihpur,75+,245,Permanently shifted,104,141,15.1
-Bihpur,18-29,96,Untraceable,48,48,0.0
+Bihpur,18-29,96,Untraceable,48,48,0
 Bihpur,30-44,160,Untraceable,71,89,11.25
 Bihpur,45-60,61,Untraceable,35,26,-14.75
 Bihpur,61-75,18,Untraceable,8,10,11.11
@@ -3047,8 +3047,8 @@ Gopalpur,75+,"1,480",Deceased,651,829,12.03
 Gopalpur,18-29,865,Duplicate enrolment,254,611,41.27
 Gopalpur,30-44,"1,256",Duplicate enrolment,641,615,-2.07
 Gopalpur,45-60,389,Duplicate enrolment,143,246,26.48
-Gopalpur,61-75,112,Duplicate enrolment,42,70,25.0
-Gopalpur,75+,25,Duplicate enrolment,14,11,-12.0
+Gopalpur,61-75,112,Duplicate enrolment,42,70,25
+Gopalpur,75+,25,Duplicate enrolment,14,11,-12
 Gopalpur,18-29,"2,811",Permanently shifted,578,"2,233",58.88
 Gopalpur,30-44,"4,873",Permanently shifted,"1,793","3,080",26.41
 Gopalpur,45-60,"2,531",Permanently shifted,"1,185","1,346",6.36
@@ -3068,7 +3068,7 @@ Pirpainti (SC),18-29,"1,568",Duplicate enrolment,474,"1,094",39.54
 Pirpainti (SC),30-44,"2,000",Duplicate enrolment,874,"1,126",12.6
 Pirpainti (SC),45-60,514,Duplicate enrolment,209,305,18.68
 Pirpainti (SC),61-75,154,Duplicate enrolment,67,87,12.99
-Pirpainti (SC),75+,40,Duplicate enrolment,11,29,45.0
+Pirpainti (SC),75+,40,Duplicate enrolment,11,29,45
 Pirpainti (SC),18-29,"4,296",Permanently shifted,"1,436","2,860",33.15
 Pirpainti (SC),30-44,"9,120",Permanently shifted,"3,588","5,532",21.32
 Pirpainti (SC),45-60,"3,752",Permanently shifted,"1,823","1,929",2.83
@@ -3091,7 +3091,7 @@ Kahalgaon,61-75,179,Duplicate enrolment,74,105,17.32
 Kahalgaon,75+,44,Duplicate enrolment,12,32,45.45
 Kahalgaon,18-29,"4,703",Permanently shifted,"1,372","3,331",41.65
 Kahalgaon,30-44,"9,059",Permanently shifted,"3,332","5,727",26.44
-Kahalgaon,45-60,"5,171",Permanently shifted,"2,508","2,663",3.0
+Kahalgaon,45-60,"5,171",Permanently shifted,"2,508","2,663",3
 Kahalgaon,61-75,"1,365",Permanently shifted,666,699,2.42
 Kahalgaon,75+,326,Permanently shifted,132,194,19.02
 Kahalgaon,18-29,"1,088",Untraceable,413,675,24.08
@@ -3106,7 +3106,7 @@ Bhagalpur,61-75,"1,839",Deceased,940,899,-2.23
 Bhagalpur,75+,"1,151",Deceased,550,601,4.43
 Bhagalpur,18-29,337,Duplicate enrolment,142,195,15.73
 Bhagalpur,30-44,679,Duplicate enrolment,320,359,5.74
-Bhagalpur,45-60,472,Duplicate enrolment,236,236,0.0
+Bhagalpur,45-60,472,Duplicate enrolment,236,236,0
 Bhagalpur,61-75,153,Duplicate enrolment,75,78,1.96
 Bhagalpur,75+,41,Duplicate enrolment,18,23,12.2
 Bhagalpur,18-29,"1,929",Permanently shifted,664,"1,265",31.16
@@ -3213,7 +3213,7 @@ Banka,18-29,"2,977",Permanently shifted,933,"2,044",37.32
 Banka,30-44,"5,710",Permanently shifted,"2,531","3,179",11.35
 Banka,45-60,"3,155",Permanently shifted,"1,641","1,514",-4.03
 Banka,61-75,931,Permanently shifted,485,446,-4.19
-Banka,75+,220,Permanently shifted,99,121,10.0
+Banka,75+,220,Permanently shifted,99,121,10
 Banka,18-29,964,Untraceable,413,551,14.32
 Banka,30-44,"2,067",Untraceable,946,"1,121",8.47
 Banka,45-60,"1,086",Untraceable,566,520,-4.24
@@ -3237,9 +3237,9 @@ Katoria (ST),75+,191,Permanently shifted,91,100,4.71
 Katoria (ST),18-29,524,Untraceable,273,251,-4.2
 Katoria (ST),30-44,"1,001",Untraceable,488,513,2.5
 Katoria (ST),45-60,554,Untraceable,284,270,-2.53
-Katoria (ST),61-75,222,Untraceable,111,111,0.0
+Katoria (ST),61-75,222,Untraceable,111,111,0
 Katoria (ST),75+,74,Untraceable,29,45,21.62
-Belhar,18-29,200,Deceased,91,109,9.0
+Belhar,18-29,200,Deceased,91,109,9
 Belhar,30-44,790,Deceased,403,387,-2.03
 Belhar,45-60,"1,476",Deceased,747,729,-1.22
 Belhar,61-75,"2,313",Deceased,"1,131","1,182",2.2
@@ -3257,7 +3257,7 @@ Belhar,75+,282,Permanently shifted,120,162,14.89
 Belhar,18-29,959,Untraceable,437,522,8.86
 Belhar,30-44,"1,956",Untraceable,953,"1,003",2.56
 Belhar,45-60,"1,293",Untraceable,681,612,-5.34
-Belhar,61-75,466,Untraceable,226,240,3.0
+Belhar,61-75,466,Untraceable,226,240,3
 Belhar,75+,152,Untraceable,58,94,23.68
 Tarapur,18-29,254,Deceased,152,102,-19.69
 Tarapur,30-44,"1,590",Deceased,864,726,-8.68
@@ -3278,7 +3278,7 @@ Tarapur,18-29,205,Untraceable,109,96,-6.34
 Tarapur,30-44,327,Untraceable,148,179,9.48
 Tarapur,45-60,206,Untraceable,111,95,-7.77
 Tarapur,61-75,80,Untraceable,39,41,2.5
-Tarapur,75+,18,Untraceable,9,9,0.0
+Tarapur,75+,18,Untraceable,9,9,0
 Munger,18-29,173,Deceased,92,81,-6.36
 Munger,30-44,"1,325",Deceased,745,580,-12.45
 Munger,45-60,"2,965",Deceased,"1,677","1,288",-13.12
@@ -3288,7 +3288,7 @@ Munger,18-29,465,Duplicate enrolment,246,219,-5.81
 Munger,30-44,"1,148",Duplicate enrolment,689,459,-20.03
 Munger,45-60,386,Duplicate enrolment,203,183,-5.18
 Munger,61-75,110,Duplicate enrolment,56,54,-1.82
-Munger,75+,25,Duplicate enrolment,10,15,20.0
+Munger,75+,25,Duplicate enrolment,10,15,20
 Munger,18-29,"1,349",Permanently shifted,519,830,23.05
 Munger,30-44,"4,057",Permanently shifted,"1,724","2,333",15.01
 Munger,45-60,"2,014",Permanently shifted,"1,051",963,-4.37
@@ -3297,8 +3297,8 @@ Munger,75+,205,Permanently shifted,89,116,13.17
 Munger,18-29,296,Untraceable,156,140,-5.41
 Munger,30-44,699,Untraceable,390,309,-11.59
 Munger,45-60,325,Untraceable,187,138,-15.08
-Munger,61-75,134,Untraceable,67,67,0.0
-Munger,75+,50,Untraceable,23,27,8.0
+Munger,61-75,134,Untraceable,67,67,0
+Munger,75+,50,Untraceable,23,27,8
 Jamalpur,18-29,209,Deceased,115,94,-10.05
 Jamalpur,30-44,"1,361",Deceased,796,565,-16.97
 Jamalpur,45-60,"2,713",Deceased,"1,449","1,264",-6.82
@@ -3378,7 +3378,7 @@ Sheikhpura,18-29,67,Untraceable,27,40,19.4
 Sheikhpura,30-44,186,Untraceable,91,95,2.15
 Sheikhpura,45-60,73,Untraceable,33,40,9.59
 Sheikhpura,61-75,23,Untraceable,12,11,-4.35
-Sheikhpura,75+,10,Untraceable,2,8,60.0
+Sheikhpura,75+,10,Untraceable,2,8,60
 Barbigha,18-29,122,Deceased,65,57,-6.56
 Barbigha,30-44,549,Deceased,270,279,1.64
 Barbigha,45-60,"1,188",Deceased,548,640,7.74
@@ -3419,7 +3419,7 @@ Asthawan,30-44,335,Untraceable,176,159,-5.07
 Asthawan,45-60,306,Untraceable,155,151,-1.31
 Asthawan,61-75,135,Untraceable,69,66,-2.22
 Asthawan,75+,55,Untraceable,24,31,12.73
-Biharsharif,18-29,175,Deceased,91,84,-4.0
+Biharsharif,18-29,175,Deceased,91,84,-4
 Biharsharif,30-44,887,Deceased,510,377,-14.99
 Biharsharif,45-60,"1,989",Deceased,"1,120",869,-12.62
 Biharsharif,61-75,"3,370",Deceased,"1,829","1,541",-8.55
@@ -3428,7 +3428,7 @@ Biharsharif,18-29,553,Duplicate enrolment,318,235,-15.01
 Biharsharif,30-44,"1,237",Duplicate enrolment,703,534,-13.66
 Biharsharif,45-60,744,Duplicate enrolment,410,334,-10.22
 Biharsharif,61-75,223,Duplicate enrolment,123,100,-10.31
-Biharsharif,75+,62,Duplicate enrolment,31,31,0.0
+Biharsharif,75+,62,Duplicate enrolment,31,31,0
 Biharsharif,18-29,965,Permanently shifted,299,666,38.03
 Biharsharif,30-44,"3,426",Permanently shifted,"1,293","2,133",24.52
 Biharsharif,45-60,"2,589",Permanently shifted,"1,392","1,197",-7.53
@@ -3548,16 +3548,16 @@ Mokama,18-29,541,Duplicate enrolment,284,257,-4.99
 Mokama,30-44,788,Duplicate enrolment,416,372,-5.58
 Mokama,45-60,314,Duplicate enrolment,156,158,0.64
 Mokama,61-75,110,Duplicate enrolment,54,56,1.82
-Mokama,75+,25,Duplicate enrolment,11,14,12.0
+Mokama,75+,25,Duplicate enrolment,11,14,12
 Mokama,18-29,"1,824",Permanently shifted,481,"1,343",47.26
 Mokama,30-44,"3,815",Permanently shifted,"1,338","2,477",29.86
 Mokama,45-60,"2,032",Permanently shifted,976,"1,056",3.94
 Mokama,61-75,742,Permanently shifted,370,372,0.27
 Mokama,75+,167,Permanently shifted,72,95,13.77
-Mokama,18-29,48,Untraceable,24,24,0.0
+Mokama,18-29,48,Untraceable,24,24,0
 Mokama,30-44,117,Untraceable,60,57,-2.56
 Mokama,45-60,73,Untraceable,38,35,-4.11
-Mokama,61-75,24,Untraceable,12,12,0.0
+Mokama,61-75,24,Untraceable,12,12,0
 Mokama,75+,6,Untraceable,2,4,33.33
 Barh,18-29,220,Deceased,116,104,-5.45
 Barh,30-44,851,Deceased,453,398,-6.46
@@ -3574,10 +3574,10 @@ Barh,30-44,"2,339",Permanently shifted,867,"1,472",25.87
 Barh,45-60,"1,534",Permanently shifted,793,741,-3.39
 Barh,61-75,531,Permanently shifted,280,251,-5.46
 Barh,75+,131,Permanently shifted,60,71,8.4
-Barh,18-29,75,Untraceable,33,42,12.0
+Barh,18-29,75,Untraceable,33,42,12
 Barh,30-44,139,Untraceable,83,56,-19.42
-Barh,45-60,100,Untraceable,54,46,-8.0
-Barh,61-75,40,Untraceable,22,18,-10.0
+Barh,45-60,100,Untraceable,54,46,-8
+Barh,61-75,40,Untraceable,22,18,-10
 Barh,75+,7,Untraceable,2,5,42.86
 Bakhtiarpur,18-29,282,Deceased,165,117,-17.02
 Bakhtiarpur,30-44,943,Deceased,562,381,-19.19
@@ -3666,8 +3666,8 @@ Patna Sahib,61-75,"4,466",Deceased,"2,441","2,025",-9.31
 Patna Sahib,75+,"3,134",Deceased,"1,665","1,469",-6.25
 Patna Sahib,18-29,436,Duplicate enrolment,244,192,-11.93
 Patna Sahib,30-44,630,Duplicate enrolment,344,286,-9.21
-Patna Sahib,45-60,348,Duplicate enrolment,174,174,0.0
-Patna Sahib,61-75,138,Duplicate enrolment,69,69,0.0
+Patna Sahib,45-60,348,Duplicate enrolment,174,174,0
+Patna Sahib,61-75,138,Duplicate enrolment,69,69,0
 Patna Sahib,75+,29,Duplicate enrolment,14,15,3.45
 Patna Sahib,18-29,987,Permanently shifted,345,642,30.09
 Patna Sahib,30-44,"4,078",Permanently shifted,"1,376","2,702",32.52
@@ -3698,7 +3698,7 @@ Fatuha,18-29,57,Untraceable,24,33,15.79
 Fatuha,30-44,184,Untraceable,99,85,-7.61
 Fatuha,45-60,118,Untraceable,66,52,-11.86
 Fatuha,61-75,37,Untraceable,15,22,18.92
-Fatuha,75+,12,Untraceable,6,6,0.0
+Fatuha,75+,12,Untraceable,6,6,0
 Danapur,18-29,163,Deceased,109,54,-33.74
 Danapur,30-44,"1,094",Deceased,735,359,-34.37
 Danapur,45-60,"2,489",Deceased,"1,508",981,-21.17
@@ -3708,7 +3708,7 @@ Danapur,18-29,382,Duplicate enrolment,201,181,-5.24
 Danapur,30-44,753,Duplicate enrolment,417,336,-10.76
 Danapur,45-60,452,Duplicate enrolment,219,233,3.1
 Danapur,61-75,181,Duplicate enrolment,94,87,-3.87
-Danapur,75+,40,Duplicate enrolment,19,21,5.0
+Danapur,75+,40,Duplicate enrolment,19,21,5
 Danapur,18-29,"2,738",Permanently shifted,"1,465","1,273",-7.01
 Danapur,30-44,"5,732",Permanently shifted,"2,674","3,058",6.7
 Danapur,45-60,"3,619",Permanently shifted,"1,892","1,727",-4.56
@@ -3797,14 +3797,14 @@ Paliganj,75+,256,Permanently shifted,125,131,2.34
 Paliganj,18-29,27,Untraceable,12,15,11.11
 Paliganj,30-44,45,Untraceable,25,20,-11.11
 Paliganj,45-60,37,Untraceable,20,17,-8.11
-Paliganj,61-75,18,Untraceable,9,9,0.0
-Paliganj,75+,4,Untraceable,3,1,-50.0
+Paliganj,61-75,18,Untraceable,9,9,0
+Paliganj,75+,4,Untraceable,3,1,-50
 Bikram,18-29,303,Deceased,174,129,-14.85
 Bikram,30-44,"1,189",Deceased,655,534,-10.18
 Bikram,45-60,"2,299",Deceased,"1,126","1,173",2.04
 Bikram,61-75,"3,652",Deceased,"1,731","1,921",5.2
 Bikram,75+,"2,790",Deceased,"1,320","1,470",5.38
-Bikram,18-29,"1,005",Duplicate enrolment,608,397,-21.0
+Bikram,18-29,"1,005",Duplicate enrolment,608,397,-21
 Bikram,30-44,"1,590",Duplicate enrolment,897,693,-12.83
 Bikram,45-60,702,Duplicate enrolment,321,381,8.55
 Bikram,61-75,237,Duplicate enrolment,107,130,9.7
@@ -3838,7 +3838,7 @@ Sandesh,18-29,343,Untraceable,120,223,30.03
 Sandesh,30-44,526,Untraceable,240,286,8.75
 Sandesh,45-60,253,Untraceable,133,120,-5.14
 Sandesh,61-75,93,Untraceable,39,54,16.13
-Sandesh,75+,20,Untraceable,7,13,30.0
+Sandesh,75+,20,Untraceable,7,13,30
 Barhara,18-29,266,Deceased,109,157,18.05
 Barhara,30-44,"1,311",Deceased,693,618,-5.72
 Barhara,45-60,"2,358",Deceased,"1,042","1,316",11.62
@@ -3888,7 +3888,7 @@ Agiaon (SC),18-29,522,Duplicate enrolment,281,241,-7.66
 Agiaon (SC),30-44,"1,049",Duplicate enrolment,675,374,-28.69
 Agiaon (SC),45-60,484,Duplicate enrolment,265,219,-9.5
 Agiaon (SC),61-75,138,Duplicate enrolment,59,79,14.49
-Agiaon (SC),75+,28,Duplicate enrolment,7,21,50.0
+Agiaon (SC),75+,28,Duplicate enrolment,7,21,50
 Agiaon (SC),18-29,"1,675",Permanently shifted,344,"1,331",58.93
 Agiaon (SC),30-44,"3,031",Permanently shifted,"1,296","1,735",14.48
 Agiaon (SC),45-60,"1,696",Permanently shifted,870,826,-2.59
@@ -3977,7 +3977,7 @@ Brahampur,75+,258,Permanently shifted,116,142,10.08
 Brahampur,18-29,439,Untraceable,215,224,2.05
 Brahampur,30-44,719,Untraceable,384,335,-6.82
 Brahampur,45-60,460,Untraceable,235,225,-2.17
-Brahampur,61-75,170,Untraceable,85,85,0.0
+Brahampur,61-75,170,Untraceable,85,85,0
 Brahampur,75+,46,Untraceable,21,25,8.7
 Buxar,18-29,181,Deceased,88,93,2.76
 Buxar,30-44,667,Deceased,298,369,10.64
@@ -4031,7 +4031,7 @@ Rajpur (SC),61-75,105,Duplicate enrolment,34,71,35.24
 Rajpur (SC),75+,24,Duplicate enrolment,14,10,-16.67
 Rajpur (SC),18-29,"1,676",Permanently shifted,231,"1,445",72.43
 Rajpur (SC),30-44,"2,326",Permanently shifted,651,"1,675",44.02
-Rajpur (SC),45-60,920,Permanently shifted,414,506,10.0
+Rajpur (SC),45-60,920,Permanently shifted,414,506,10
 Rajpur (SC),61-75,302,Permanently shifted,146,156,3.31
 Rajpur (SC),75+,76,Permanently shifted,32,44,15.79
 Rajpur (SC),18-29,326,Untraceable,139,187,14.72
@@ -4074,7 +4074,7 @@ Mohania (SC),30-44,"4,145",Permanently shifted,"1,473","2,672",28.93
 Mohania (SC),45-60,"2,683",Permanently shifted,"1,289","1,394",3.91
 Mohania (SC),61-75,930,Permanently shifted,449,481,3.44
 Mohania (SC),75+,207,Permanently shifted,91,116,12.08
-Mohania (SC),18-29,100,Untraceable,36,64,28.0
+Mohania (SC),18-29,100,Untraceable,36,64,28
 Mohania (SC),30-44,154,Untraceable,76,78,1.3
 Mohania (SC),45-60,84,Untraceable,36,48,14.29
 Mohania (SC),61-75,37,Untraceable,18,19,2.7
@@ -4088,7 +4088,7 @@ Bhabua,18-29,478,Duplicate enrolment,230,248,3.77
 Bhabua,30-44,427,Duplicate enrolment,213,214,0.23
 Bhabua,45-60,195,Duplicate enrolment,89,106,8.72
 Bhabua,61-75,70,Duplicate enrolment,27,43,22.86
-Bhabua,75+,20,Duplicate enrolment,3,17,70.0
+Bhabua,75+,20,Duplicate enrolment,3,17,70
 Bhabua,18-29,"3,006",Permanently shifted,516,"2,490",65.67
 Bhabua,30-44,"3,135",Permanently shifted,"1,168","1,967",25.49
 Bhabua,45-60,"2,560",Permanently shifted,"1,273","1,287",0.55
@@ -4097,8 +4097,8 @@ Bhabua,75+,260,Permanently shifted,122,138,6.15
 Bhabua,18-29,76,Untraceable,31,45,18.42
 Bhabua,30-44,85,Untraceable,41,44,3.53
 Bhabua,45-60,57,Untraceable,30,27,-5.26
-Bhabua,61-75,25,Untraceable,13,12,-4.0
-Bhabua,75+,4,Untraceable,1,3,50.0
+Bhabua,61-75,25,Untraceable,13,12,-4
+Bhabua,75+,4,Untraceable,1,3,50
 Chainpur,18-29,354,Deceased,146,208,17.51
 Chainpur,30-44,812,Deceased,349,463,14.04
 Chainpur,45-60,"1,439",Deceased,641,798,10.91
@@ -4148,7 +4148,7 @@ Sasaram,18-29,917,Duplicate enrolment,490,427,-6.87
 Sasaram,30-44,"1,400",Duplicate enrolment,760,640,-8.57
 Sasaram,45-60,582,Duplicate enrolment,275,307,5.5
 Sasaram,61-75,170,Duplicate enrolment,75,95,11.76
-Sasaram,75+,40,Duplicate enrolment,16,24,20.0
+Sasaram,75+,40,Duplicate enrolment,16,24,20
 Sasaram,18-29,"2,691",Permanently shifted,706,"1,985",47.53
 Sasaram,30-44,"4,412",Permanently shifted,"1,712","2,700",22.39
 Sasaram,45-60,"2,689",Permanently shifted,"1,390","1,299",-3.38
@@ -4197,8 +4197,8 @@ Dinara,75+,142,Permanently shifted,68,74,4.23
 Dinara,18-29,162,Untraceable,98,64,-20.99
 Dinara,30-44,177,Untraceable,93,84,-5.08
 Dinara,45-60,122,Untraceable,68,54,-11.48
-Dinara,61-75,50,Untraceable,25,25,0.0
-Dinara,75+,12,Untraceable,6,6,0.0
+Dinara,61-75,50,Untraceable,25,25,0
+Dinara,75+,12,Untraceable,6,6,0
 Nokha,18-29,260,Deceased,122,138,6.15
 Nokha,30-44,872,Deceased,415,457,4.82
 Nokha,45-60,"2,040",Deceased,870,"1,170",14.71
@@ -4207,7 +4207,7 @@ Nokha,75+,"2,129",Deceased,772,"1,357",27.48
 Nokha,18-29,644,Duplicate enrolment,321,323,0.31
 Nokha,30-44,908,Duplicate enrolment,524,384,-15.42
 Nokha,45-60,307,Duplicate enrolment,136,171,11.4
-Nokha,61-75,100,Duplicate enrolment,47,53,6.0
+Nokha,61-75,100,Duplicate enrolment,47,53,6
 Nokha,75+,23,Duplicate enrolment,6,17,47.83
 Nokha,18-29,"1,855",Permanently shifted,360,"1,495",61.19
 Nokha,30-44,"2,156",Permanently shifted,779,"1,377",27.74
@@ -4227,8 +4227,8 @@ Dehri,75+,"1,991",Deceased,852,"1,139",14.41
 Dehri,18-29,604,Duplicate enrolment,309,295,-2.32
 Dehri,30-44,983,Duplicate enrolment,524,459,-6.61
 Dehri,45-60,358,Duplicate enrolment,162,196,9.5
-Dehri,61-75,124,Duplicate enrolment,62,62,0.0
-Dehri,75+,25,Duplicate enrolment,12,13,4.0
+Dehri,61-75,124,Duplicate enrolment,62,62,0
+Dehri,75+,25,Duplicate enrolment,12,13,4
 Dehri,18-29,"1,483",Permanently shifted,299,"1,184",59.68
 Dehri,30-44,"3,042",Permanently shifted,"1,175","1,867",22.75
 Dehri,45-60,"1,979",Permanently shifted,"1,014",965,-2.48
@@ -4237,7 +4237,7 @@ Dehri,75+,171,Permanently shifted,87,84,-1.75
 Dehri,18-29,87,Untraceable,36,51,17.24
 Dehri,30-44,212,Untraceable,84,128,20.75
 Dehri,45-60,140,Untraceable,74,66,-5.71
-Dehri,61-75,42,Untraceable,21,21,0.0
+Dehri,61-75,42,Untraceable,21,21,0
 Dehri,75+,15,Untraceable,5,10,33.33
 Karakat,18-29,324,Deceased,141,183,12.96
 Karakat,30-44,964,Deceased,467,497,3.11
@@ -4248,7 +4248,7 @@ Karakat,18-29,812,Duplicate enrolment,423,389,-4.19
 Karakat,30-44,"1,155",Duplicate enrolment,624,531,-8.05
 Karakat,45-60,474,Duplicate enrolment,213,261,10.13
 Karakat,61-75,155,Duplicate enrolment,71,84,8.39
-Karakat,75+,25,Duplicate enrolment,11,14,12.0
+Karakat,75+,25,Duplicate enrolment,11,14,12
 Karakat,18-29,"1,895",Permanently shifted,309,"1,586",67.39
 Karakat,30-44,"3,094",Permanently shifted,"1,181","1,913",23.66
 Karakat,45-60,"2,664",Permanently shifted,"1,352","1,312",-1.5
@@ -4260,7 +4260,7 @@ Karakat,45-60,982,Untraceable,510,472,-3.87
 Karakat,61-75,399,Untraceable,178,221,10.78
 Karakat,75+,173,Untraceable,75,98,13.29
 Arwal,18-29,167,Deceased,87,80,-4.19
-Arwal,30-44,920,Deceased,437,483,5.0
+Arwal,30-44,920,Deceased,437,483,5
 Arwal,45-60,"1,668",Deceased,681,987,18.35
 Arwal,61-75,"2,342",Deceased,953,"1,389",18.62
 Arwal,75+,"1,309",Deceased,518,791,20.86
@@ -4285,7 +4285,7 @@ Kurtha,45-60,"1,548",Deceased,660,888,14.73
 Kurtha,61-75,"2,238",Deceased,953,"1,285",14.83
 Kurtha,75+,"1,492",Deceased,650,842,12.87
 Kurtha,18-29,572,Duplicate enrolment,334,238,-16.78
-Kurtha,30-44,"1,283",Duplicate enrolment,680,603,-6.0
+Kurtha,30-44,"1,283",Duplicate enrolment,680,603,-6
 Kurtha,45-60,427,Duplicate enrolment,216,211,-1.17
 Kurtha,61-75,136,Duplicate enrolment,53,83,22.06
 Kurtha,75+,34,Duplicate enrolment,10,24,41.18
@@ -4338,7 +4338,7 @@ Ghosi,18-29,545,Untraceable,264,281,3.12
 Ghosi,30-44,"1,244",Untraceable,597,647,4.02
 Ghosi,45-60,932,Untraceable,472,460,-1.29
 Ghosi,61-75,350,Untraceable,172,178,1.71
-Ghosi,75+,100,Untraceable,52,48,-4.0
+Ghosi,75+,100,Untraceable,52,48,-4
 Makhdumpur (SC),18-29,146,Deceased,78,68,-6.85
 Makhdumpur (SC),30-44,632,Deceased,354,278,-12.03
 Makhdumpur (SC),45-60,"1,307",Deceased,637,670,2.52
@@ -4348,7 +4348,7 @@ Makhdumpur (SC),18-29,381,Duplicate enrolment,229,152,-20.21
 Makhdumpur (SC),30-44,572,Duplicate enrolment,323,249,-12.94
 Makhdumpur (SC),45-60,328,Duplicate enrolment,163,165,0.61
 Makhdumpur (SC),61-75,103,Duplicate enrolment,55,48,-6.8
-Makhdumpur (SC),75+,20,Duplicate enrolment,7,13,30.0
+Makhdumpur (SC),75+,20,Duplicate enrolment,7,13,30
 Makhdumpur (SC),18-29,"1,012",Permanently shifted,251,761,50.4
 Makhdumpur (SC),30-44,"2,430",Permanently shifted,959,"1,471",21.07
 Makhdumpur (SC),45-60,"1,969",Permanently shifted,936,"1,033",4.93
@@ -4358,7 +4358,7 @@ Makhdumpur (SC),18-29,252,Untraceable,124,128,1.59
 Makhdumpur (SC),30-44,471,Untraceable,230,241,2.34
 Makhdumpur (SC),45-60,338,Untraceable,180,158,-6.51
 Makhdumpur (SC),61-75,112,Untraceable,46,66,17.86
-Makhdumpur (SC),75+,40,Untraceable,18,22,10.0
+Makhdumpur (SC),75+,40,Untraceable,18,22,10
 Goh,18-29,262,Deceased,110,152,16.03
 Goh,30-44,852,Deceased,352,500,17.37
 Goh,45-60,"1,848",Deceased,731,"1,117",20.89
@@ -4371,7 +4371,7 @@ Goh,61-75,183,Duplicate enrolment,78,105,14.75
 Goh,75+,37,Duplicate enrolment,12,25,35.14
 Goh,18-29,"2,287",Permanently shifted,480,"1,807",58.02
 Goh,30-44,"3,439",Permanently shifted,"1,293","2,146",24.8
-Goh,45-60,"2,949",Permanently shifted,"1,386","1,563",6.0
+Goh,45-60,"2,949",Permanently shifted,"1,386","1,563",6
 Goh,61-75,987,Permanently shifted,462,525,6.38
 Goh,75+,245,Permanently shifted,89,156,27.35
 Goh,18-29,747,Untraceable,325,422,12.99
@@ -4408,7 +4408,7 @@ Nabinagar,18-29,922,Duplicate enrolment,473,449,-2.6
 Nabinagar,30-44,"1,400",Duplicate enrolment,750,650,-7.14
 Nabinagar,45-60,672,Duplicate enrolment,325,347,3.27
 Nabinagar,61-75,199,Duplicate enrolment,82,117,17.59
-Nabinagar,75+,45,Duplicate enrolment,18,27,20.0
+Nabinagar,75+,45,Duplicate enrolment,18,27,20
 Nabinagar,18-29,"2,916",Permanently shifted,804,"2,112",44.86
 Nabinagar,30-44,"3,845",Permanently shifted,"1,513","2,332",21.3
 Nabinagar,45-60,"2,485",Permanently shifted,"1,218","1,267",1.97
@@ -4418,7 +4418,7 @@ Nabinagar,18-29,643,Untraceable,281,362,12.6
 Nabinagar,30-44,814,Untraceable,379,435,6.88
 Nabinagar,45-60,562,Untraceable,271,291,3.56
 Nabinagar,61-75,167,Untraceable,77,90,7.78
-Nabinagar,75+,50,Untraceable,19,31,24.0
+Nabinagar,75+,50,Untraceable,19,31,24
 Kutumba (SC),18-29,204,Deceased,88,116,13.73
 Kutumba (SC),30-44,863,Deceased,416,447,3.59
 Kutumba (SC),45-60,"1,942",Deceased,869,"1,073",10.5
@@ -4448,18 +4448,18 @@ Aurangabad,18-29,680,Duplicate enrolment,326,354,4.12
 Aurangabad,30-44,"1,106",Duplicate enrolment,594,512,-7.41
 Aurangabad,45-60,537,Duplicate enrolment,267,270,0.56
 Aurangabad,61-75,178,Duplicate enrolment,84,94,5.62
-Aurangabad,75+,50,Duplicate enrolment,19,31,24.0
+Aurangabad,75+,50,Duplicate enrolment,19,31,24
 Aurangabad,18-29,"2,978",Permanently shifted,718,"2,260",51.78
 Aurangabad,30-44,"5,350",Permanently shifted,"2,096","3,254",21.64
 Aurangabad,45-60,"3,578",Permanently shifted,"1,740","1,838",2.74
 Aurangabad,61-75,"1,347",Permanently shifted,707,640,-4.97
-Aurangabad,75+,352,Permanently shifted,176,176,0.0
+Aurangabad,75+,352,Permanently shifted,176,176,0
 Aurangabad,18-29,"1,101",Untraceable,522,579,5.18
 Aurangabad,30-44,"2,799",Untraceable,"1,324","1,475",5.39
-Aurangabad,45-60,"1,901",Untraceable,979,922,-3.0
+Aurangabad,45-60,"1,901",Untraceable,979,922,-3
 Aurangabad,61-75,721,Untraceable,361,360,-0.14
 Aurangabad,75+,230,Untraceable,104,126,9.57
-Rafiganj,18-29,310,Deceased,155,155,0.0
+Rafiganj,18-29,310,Deceased,155,155,0
 Rafiganj,30-44,"1,201",Deceased,549,652,8.58
 Rafiganj,45-60,"2,459",Deceased,"1,122","1,337",8.74
 Rafiganj,61-75,"3,606",Deceased,"1,556","2,050",13.7
@@ -4481,7 +4481,7 @@ Rafiganj,61-75,267,Untraceable,125,142,6.37
 Rafiganj,75+,63,Untraceable,26,37,17.46
 Gurua,18-29,255,Deceased,115,140,9.8
 Gurua,30-44,"1,029",Deceased,504,525,2.04
-Gurua,45-60,"2,002",Deceased,961,"1,041",4.0
+Gurua,45-60,"2,002",Deceased,961,"1,041",4
 Gurua,61-75,"2,946",Deceased,"1,299","1,647",11.81
 Gurua,75+,"2,033",Deceased,883,"1,150",13.13
 Gurua,18-29,871,Duplicate enrolment,476,395,-9.3
@@ -4498,7 +4498,7 @@ Gurua,18-29,870,Untraceable,451,419,-3.68
 Gurua,30-44,837,Untraceable,362,475,13.5
 Gurua,45-60,408,Untraceable,176,232,13.73
 Gurua,61-75,159,Untraceable,63,96,20.75
-Gurua,75+,40,Untraceable,18,22,10.0
+Gurua,75+,40,Untraceable,18,22,10
 Sherghati,18-29,219,Deceased,107,112,2.28
 Sherghati,30-44,"1,023",Deceased,561,462,-9.68
 Sherghati,45-60,"1,787",Deceased,893,894,0.06
@@ -4513,7 +4513,7 @@ Sherghati,18-29,"1,839",Permanently shifted,400,"1,439",56.5
 Sherghati,30-44,"3,508",Permanently shifted,"1,352","2,156",22.92
 Sherghati,45-60,"2,248",Permanently shifted,"1,096","1,152",2.49
 Sherghati,61-75,671,Permanently shifted,323,348,3.73
-Sherghati,75+,144,Permanently shifted,72,72,0.0
+Sherghati,75+,144,Permanently shifted,72,72,0
 Sherghati,18-29,687,Untraceable,329,358,4.22
 Sherghati,30-44,773,Untraceable,282,491,27.04
 Sherghati,45-60,384,Untraceable,185,199,3.65
@@ -4533,13 +4533,13 @@ Imamganj (SC),18-29,"2,618",Permanently shifted,593,"2,025",54.7
 Imamganj (SC),30-44,"4,309",Permanently shifted,"1,680","2,629",22.02
 Imamganj (SC),45-60,"2,572",Permanently shifted,"1,276","1,296",0.78
 Imamganj (SC),61-75,793,Permanently shifted,376,417,5.17
-Imamganj (SC),75+,164,Permanently shifted,82,82,0.0
+Imamganj (SC),75+,164,Permanently shifted,82,82,0
 Imamganj (SC),18-29,"1,006",Untraceable,448,558,10.93
 Imamganj (SC),30-44,"1,623",Untraceable,678,945,16.45
 Imamganj (SC),45-60,752,Untraceable,332,420,11.7
 Imamganj (SC),61-75,286,Untraceable,126,160,11.89
 Imamganj (SC),75+,107,Untraceable,41,66,23.36
-Barachatti (SC),18-29,286,Deceased,143,143,0.0
+Barachatti (SC),18-29,286,Deceased,143,143,0
 Barachatti (SC),30-44,"1,309",Deceased,693,616,-5.88
 Barachatti (SC),45-60,"2,340",Deceased,"1,267","1,073",-8.29
 Barachatti (SC),61-75,"3,241",Deceased,"1,600","1,641",1.27
@@ -4558,7 +4558,7 @@ Barachatti (SC),18-29,636,Untraceable,250,386,21.38
 Barachatti (SC),30-44,"1,219",Untraceable,521,698,14.52
 Barachatti (SC),45-60,585,Untraceable,264,321,9.74
 Barachatti (SC),61-75,212,Untraceable,86,126,18.87
-Barachatti (SC),75+,80,Untraceable,32,48,20.0
+Barachatti (SC),75+,80,Untraceable,32,48,20
 Bodh Gaya (SC),18-29,276,Deceased,144,132,-4.35
 Bodh Gaya (SC),30-44,"1,145",Deceased,628,517,-9.69
 Bodh Gaya (SC),45-60,"2,384",Deceased,"1,241","1,143",-4.11
@@ -4567,7 +4567,7 @@ Bodh Gaya (SC),75+,"2,168",Deceased,"1,027","1,141",5.26
 Bodh Gaya (SC),18-29,940,Duplicate enrolment,539,401,-14.68
 Bodh Gaya (SC),30-44,"1,512",Duplicate enrolment,809,703,-7.01
 Bodh Gaya (SC),45-60,581,Duplicate enrolment,241,340,17.04
-Bodh Gaya (SC),61-75,150,Duplicate enrolment,54,96,28.0
+Bodh Gaya (SC),61-75,150,Duplicate enrolment,54,96,28
 Bodh Gaya (SC),75+,35,Duplicate enrolment,8,27,54.29
 Bodh Gaya (SC),18-29,"1,176",Permanently shifted,225,951,61.73
 Bodh Gaya (SC),30-44,"1,734",Permanently shifted,550,"1,184",36.56
@@ -4575,7 +4575,7 @@ Bodh Gaya (SC),45-60,956,Permanently shifted,456,500,4.6
 Bodh Gaya (SC),61-75,215,Permanently shifted,111,104,-3.26
 Bodh Gaya (SC),75+,63,Permanently shifted,32,31,-1.59
 Bodh Gaya (SC),18-29,104,Untraceable,61,43,-17.31
-Bodh Gaya (SC),30-44,70,Untraceable,35,35,0.0
+Bodh Gaya (SC),30-44,70,Untraceable,35,35,0
 Bodh Gaya (SC),45-60,35,Untraceable,20,15,-14.29
 Bodh Gaya (SC),61-75,14,Untraceable,10,4,-42.86
 Bodh Gaya (SC),75+,3,Untraceable,1,2,33.33
@@ -4648,7 +4648,7 @@ Atri,18-29,650,Duplicate enrolment,370,280,-13.85
 Atri,30-44,"1,440",Duplicate enrolment,787,653,-9.31
 Atri,45-60,696,Duplicate enrolment,342,354,1.72
 Atri,61-75,222,Duplicate enrolment,97,125,12.61
-Atri,75+,38,Duplicate enrolment,19,19,0.0
+Atri,75+,38,Duplicate enrolment,19,19,0
 Atri,18-29,"1,629",Permanently shifted,411,"1,218",49.54
 Atri,30-44,"3,871",Permanently shifted,"1,419","2,452",26.69
 Atri,45-60,"2,271",Permanently shifted,"1,105","1,166",2.69
@@ -4658,7 +4658,7 @@ Atri,18-29,290,Untraceable,154,136,-6.21
 Atri,30-44,698,Untraceable,343,355,1.72
 Atri,45-60,421,Untraceable,196,225,6.89
 Atri,61-75,137,Untraceable,66,71,3.65
-Atri,75+,32,Untraceable,16,16,0.0
+Atri,75+,32,Untraceable,16,16,0
 Wazirganj,18-29,286,Deceased,165,121,-15.38
 Wazirganj,30-44,"1,452",Deceased,789,663,-8.68
 Wazirganj,45-60,"2,903",Deceased,"1,430","1,473",1.48
@@ -4695,7 +4695,7 @@ Rajauli (SC),45-60,"2,016",Permanently shifted,996,"1,020",1.19
 Rajauli (SC),61-75,656,Permanently shifted,336,320,-2.44
 Rajauli (SC),75+,172,Permanently shifted,71,101,17.44
 Rajauli (SC),18-29,469,Untraceable,238,231,-1.49
-Rajauli (SC),30-44,796,Untraceable,398,398,0.0
+Rajauli (SC),30-44,796,Untraceable,398,398,0
 Rajauli (SC),45-60,542,Untraceable,270,272,0.37
 Rajauli (SC),61-75,190,Untraceable,85,105,10.53
 Rajauli (SC),75+,55,Untraceable,18,37,34.55
@@ -4742,7 +4742,7 @@ Nawada,75+,80,Untraceable,43,37,-7.5
 Gobindpur,18-29,215,Deceased,107,108,0.47
 Gobindpur,30-44,"1,139",Deceased,645,494,-13.26
 Gobindpur,45-60,"2,495",Deceased,"1,310","1,185",-5.01
-Gobindpur,61-75,"3,704",Deceased,"1,889","1,815",-2.0
+Gobindpur,61-75,"3,704",Deceased,"1,889","1,815",-2
 Gobindpur,75+,"3,099",Deceased,"1,440","1,659",7.07
 Gobindpur,18-29,698,Duplicate enrolment,379,319,-8.6
 Gobindpur,30-44,"1,497",Duplicate enrolment,811,686,-8.35
@@ -4777,7 +4777,7 @@ Warsaliganj,75+,239,Permanently shifted,115,124,3.77
 Warsaliganj,18-29,376,Untraceable,182,194,3.19
 Warsaliganj,30-44,699,Untraceable,357,342,-2.15
 Warsaliganj,45-60,418,Untraceable,213,205,-1.91
-Warsaliganj,61-75,175,Untraceable,77,98,12.0
+Warsaliganj,61-75,175,Untraceable,77,98,12
 Warsaliganj,75+,64,Untraceable,31,33,3.13
 Sikandra (SC),18-29,251,Deceased,119,132,5.18
 Sikandra (SC),30-44,983,Deceased,445,538,9.46
@@ -4787,7 +4787,7 @@ Sikandra (SC),75+,"1,770",Deceased,762,"1,008",13.9
 Sikandra (SC),18-29,903,Duplicate enrolment,427,476,5.43
 Sikandra (SC),30-44,"1,299",Duplicate enrolment,647,652,0.38
 Sikandra (SC),45-60,708,Duplicate enrolment,302,406,14.69
-Sikandra (SC),61-75,232,Duplicate enrolment,87,145,25.0
+Sikandra (SC),61-75,232,Duplicate enrolment,87,145,25
 Sikandra (SC),75+,49,Duplicate enrolment,20,29,18.37
 Sikandra (SC),18-29,"2,516",Permanently shifted,786,"1,730",37.52
 Sikandra (SC),30-44,"3,840",Permanently shifted,"1,490","2,350",22.4
@@ -4808,7 +4808,7 @@ Jamui,18-29,837,Duplicate enrolment,428,409,-2.27
 Jamui,30-44,959,Duplicate enrolment,462,497,3.65
 Jamui,45-60,463,Duplicate enrolment,196,267,15.33
 Jamui,61-75,169,Duplicate enrolment,63,106,25.44
-Jamui,75+,30,Duplicate enrolment,9,21,40.0
+Jamui,75+,30,Duplicate enrolment,9,21,40
 Jamui,18-29,"3,408",Permanently shifted,"1,075","2,333",36.91
 Jamui,30-44,"6,539",Permanently shifted,"2,594","3,945",20.66
 Jamui,45-60,"4,401",Permanently shifted,"2,222","2,179",-0.98
@@ -4816,11 +4816,11 @@ Jamui,61-75,"1,472",Permanently shifted,710,762,3.53
 Jamui,75+,296,Permanently shifted,124,172,16.22
 Jamui,18-29,368,Untraceable,179,189,2.72
 Jamui,30-44,691,Untraceable,310,381,10.27
-Jamui,45-60,442,Untraceable,221,221,0.0
+Jamui,45-60,442,Untraceable,221,221,0
 Jamui,61-75,158,Untraceable,68,90,13.92
 Jamui,75+,37,Untraceable,18,19,2.7
 Jhajha,18-29,242,Deceased,104,138,14.05
-Jhajha,30-44,860,Deceased,430,430,0.0
+Jhajha,30-44,860,Deceased,430,430,0
 Jhajha,45-60,"1,342",Deceased,638,704,4.92
 Jhajha,61-75,"2,234",Deceased,985,"1,249",11.82
 Jhajha,75+,"1,247",Deceased,555,692,10.99

@@ -40,7 +40,7 @@ const HEADER_LABELS = {
 const labelFor = h => HEADER_LABELS[h] || h;
 
 // NEW: categorical columns use dropdowns
-const CAT_COLS = new Set(["Age group", "Reason for deletion"]);
+const CAT_COLS = new Set(["Age group", "Reason for deletion", "Assembly constituency name"]);
 let UNIQUES = {}; // filled after CSV load
 
 // ===== Helpers =====
@@ -53,6 +53,17 @@ function toNumber(v) {
 	const cleaned = s.replace(/,/g, "").replace(/%$/, "");
 	const n = parseFloat(cleaned);
 	return Number.isFinite(n) ? n : NaN;
+}
+function fmtInt(n) {
+	return Number.isFinite(n) ? Math.round(n).toLocaleString() : "";
+}
+// percentage points: (female/total - male/total) * 100
+function genderImbalancePct(male, female) {
+	const m = toNumber(male),
+		f = toNumber(female);
+	const total = m + f;
+	if (!Number.isFinite(m) || !Number.isFinite(f) || total <= 0) return "";
+	return ((f / total - m / total) * 100).toFixed(2);
 }
 
 // ===== CSV =====
@@ -110,6 +121,9 @@ async function init() {
 	selectedCols = headers.slice(); // default: show all
 	inferNumericCols();
 
+	// ---- ADD "ALL" TOTAL ROWS PER AC (all age groups + all reasons) ----
+	addTotalRowsPerAC();
+
 	// Build unique lists for categorical dropdowns
 	UNIQUES = {};
 	for (const col of CAT_COLS) {
@@ -146,6 +160,76 @@ async function init() {
 		}
 	});
 	btnAddFilter.addEventListener("click", () => addFilterRow());
+}
+
+// Build “ALL” rows: one per AC, summing across all age groups and all reasons.
+function addTotalRowsPerAC() {
+	const AC_COL = "Assembly constituency name";
+	const AGE_COL = "Age group";
+	const REASON_COL = "Reason for deletion";
+	const TOT_COL = "Total deletions";
+	const M_COL = "Male deletions";
+	const F_COL = "Female deletions";
+	const G_COL = "Gender imbalance in pct";
+
+	if (![AC_COL, AGE_COL, TOT_COL, M_COL, F_COL].every(h => headers.includes(h))) return;
+
+	// --- (1) Aggregate ALL reasons + ALL ages (already implemented) ---
+	const aggAll = new Map(); // ac -> {tot, m, f}
+	for (const r of rows) {
+		if (String(r[AGE_COL]).toUpperCase() === "ALL") continue;
+		const ac = r[AC_COL];
+		const tot = toNumber(r[TOT_COL]);
+		const m = toNumber(r[M_COL]);
+		const f = toNumber(r[F_COL]);
+		const a = aggAll.get(ac) || { tot: 0, m: 0, f: 0 };
+		a.tot += Number.isFinite(tot) ? tot : 0;
+		a.m += Number.isFinite(m) ? m : 0;
+		a.f += Number.isFinite(f) ? f : 0;
+		aggAll.set(ac, a);
+	}
+	for (const [ac, a] of aggAll.entries()) {
+		const gi = genderImbalancePct(a.m, a.f);
+		rows.push({
+			[AC_COL]: ac,
+			[AGE_COL]: "ALL",
+			[REASON_COL]: "All reasons",
+			[TOT_COL]: fmtInt(a.tot),
+			[M_COL]: fmtInt(a.m),
+			[F_COL]: fmtInt(a.f),
+			[G_COL]: gi,
+		});
+	}
+
+	// --- (2) Aggregate per reason across ALL ages ---
+	const aggByReason = new Map(); // key = ac|reason -> {tot,m,f}
+	for (const r of rows) {
+		if (String(r[AGE_COL]).toUpperCase() === "ALL") continue;
+		const ac = r[AC_COL];
+		const reason = r[REASON_COL] || "";
+		const tot = toNumber(r[TOT_COL]);
+		const m = toNumber(r[M_COL]);
+		const f = toNumber(r[F_COL]);
+		const key = ac + "|" + reason;
+		const a = aggByReason.get(key) || { tot: 0, m: 0, f: 0 };
+		a.tot += Number.isFinite(tot) ? tot : 0;
+		a.m += Number.isFinite(m) ? m : 0;
+		a.f += Number.isFinite(f) ? f : 0;
+		aggByReason.set(key, a);
+	}
+	for (const [key, a] of aggByReason.entries()) {
+		const [ac, reason] = key.split("|");
+		const gi = genderImbalancePct(a.m, a.f);
+		rows.push({
+			[AC_COL]: ac,
+			[AGE_COL]: "ALL",
+			[REASON_COL]: reason,
+			[TOT_COL]: fmtInt(a.tot),
+			[M_COL]: fmtInt(a.m),
+			[F_COL]: fmtInt(a.f),
+			[G_COL]: gi,
+		});
+	}
 }
 
 function inferNumericCols() {
@@ -294,7 +378,7 @@ function applySearchAndFilters() {
 	}
 
 	filtered = rows.filter(r => {
-		// 1) OR groups for categorical "=" (e.g., Age group = 45–60 OR 61–75)
+		// 1) OR groups for categorical "=" (e.g., Age group = 45–60 OR 61–75 or ALL)
 		for (const [col, set] of orSets) {
 			const v = String(r[col] ?? "").toLowerCase();
 			if (!set.has(v)) return false; // must match at least one chosen value

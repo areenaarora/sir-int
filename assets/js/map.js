@@ -33,7 +33,14 @@
 		"#e34a33",
 		"#b30000",
 	];
-	const COLORS_RATIO_DIVERGE = ["#006d2c", "#fee5d9", "#fcbba1", "#fc9272", "#fb6a4a", "#cb181d"];
+	const COLORS_RATIO_DIVERGE = [
+		"#00441b", // strong green (male skew)
+		"#238b45",
+		"#a1d99b", // light green
+		"#fcbba1", // light red
+		"#fb6a4a",
+		"#cb181d", // strong red (female skew)
+	];
 	const fmt = x => (x == null || !isFinite(+x) ? "–" : d3.format(",")(x));
 	const toNum = v => (v == null || v === "" ? 0 : +String(v).replace(/,/g, ""));
 
@@ -273,9 +280,22 @@
 			);
 			const mapAc = new Map(byAc);
 
+			const PIPRA_BY_NO = new Map([
+				[17, "Pipra, Purvi Champaran"],
+				[42, "Pipra, Supaul"],
+			]);
+
 			const values = [];
 			for (const f of state.features) {
-				const acName = String(f.properties[state.acNameKeyInGeo] ?? "").trim();
+				const rawName = String(f.properties[state.acNameKeyInGeo] ?? "").trim();
+				const acNo = state.acKeyInGeo != null ? +f.properties[state.acKeyInGeo] : null;
+
+				// Special-case: Pipra appears twice, disambiguate using AC number
+				let acName = rawName;
+				if (rawName === "Pipra" && Number.isFinite(acNo) && PIPRA_BY_NO.has(acNo)) {
+					acName = PIPRA_BY_NO.get(acNo);
+				}
+
 				const rec = mapAc.get(acName);
 				f.__meta = rec || null;
 				f.__val = rec ? (state.metric === "total" ? rec.total : rec.ratio) : null;
@@ -286,8 +306,31 @@
 			if (state.metric === "total") {
 				color = d3.scaleQuantile().domain(values).range(COLORS_TOTAL);
 			} else {
-				const RATIO_BREAKS = [0, 37.3, 44.1, 52.0, 58.8];
-				color = d3.scaleThreshold().domain(RATIO_BREAKS).range(COLORS_RATIO_DIVERGE);
+				// Split the distribution
+				const negs = values.filter(v => v < 0);
+				const poss = values.filter(v => v > 0);
+
+				// Discrete steps: dark→light green (male-skew), neutral at 0, light→dark red (female-skew)
+				const GREENS = ["#00441b", "#238b45", "#a1d99b"]; // 3 steps
+				const NEUTRAL = "#fee5d9";
+				const REDS = ["#fca082", "#fb6a4a", "#ef3b2c", "#99000d"];
+
+				const negQ = negs.length ? d3.scaleQuantile().domain(negs).range(GREENS).quantiles() : [];
+				const posQ = poss.length ? d3.scaleQuantile().domain(poss).range(REDS).quantiles() : [];
+
+				// thresholds: [...neg breaks, 0, ...pos breaks] ; range must be length = thresholds + 1
+				const domain = [-20, -10, -5, 0, 5, 10, 20, 30];
+				const range = [
+					"#00441b",
+					"#238b45",
+					"#a1d99b",
+					"#fee5d9",
+					"#fca082",
+					"#fb6a4a",
+					"#ef3b2c",
+					"#99000d",
+				];
+				color = d3.scaleThreshold().domain(domain).range(range);
 			}
 
 			gAcs
@@ -302,10 +345,11 @@
 			sel.status.text(`Showing: ${parts.join(" ")}`);
 
 			if (state.metric === "total") drawLegendContinuous(color, "Total deletions");
-			else drawLegendDiverging(color, "Female vs Male %");
+			else drawLegendDiverging(color, "Female vs male deletions");
 		}
 
 		function computeRatio(v) {
+			// If CSV already has a delta (% points), use a weighted mean
 			const provided = v.every(d => Number.isFinite(d[COLS.ratio]));
 			if (provided) {
 				const w = d3.sum(v, d => (Number.isFinite(d[COLS.ratio]) ? d[COLS.male] : 0));
@@ -313,9 +357,10 @@
 					? d3.sum(v, d => (d[COLS.ratio] || 0) * (d[COLS.male] || 0)) / w
 					: d3.mean(v, d => d[COLS.ratio]);
 			}
+			// Fallback: convert to delta so 0 = equal, <0 = more male, >0 = more female
 			const m = d3.sum(v, d => d[COLS.male]);
 			const f = d3.sum(v, d => d[COLS.female]);
-			return m > 0 ? (f / m) * 100 : NaN;
+			return m > 0 ? (f / m) * 100 - 100 : NaN;
 		}
 
 		// -------- Legends --------

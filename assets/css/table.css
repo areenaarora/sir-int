@@ -52,6 +52,44 @@
 	transform: translateY(-1px);
 }
 
+/* === Make toggle pills match "Jump to table" === */
+.view-toggle {
+	/* set once; everything below uses currentColor like .hero__cta */
+	color: #1a56db; /* same blue as links/Jump CTA */
+}
+
+.view-toggle .btn {
+	/* mirror .hero__cta */
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid currentColor; /* outline like Jump CTA */
+	background: #fff;
+	color: inherit; /* use the blue from .view-toggle */
+	padding: 10px 14px;
+	border-radius: 999px;
+	font-weight: 600;
+	line-height: 1;
+	box-shadow: none; /* remove previous button look */
+	transition: transform 0.15s ease;
+}
+
+.view-toggle .btn:hover,
+.view-toggle .btn:focus {
+	transform: translateY(-1px);
+}
+
+/* keep active state as outline (not filled) */
+.view-toggle .btn.is-active {
+	background: #fff;
+	color: inherit;
+	border-color: currentColor;
+}
+
+/* kill older ghost styles inside the toggle */
+.view-toggle .btn.btn--ghost {
+	border-color: currentColor;
+}
+
 /* ----- Intro block (below hero) ----- */
 .intro-block {
 	--intro-bg: #ffffff;
