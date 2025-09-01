@@ -28,6 +28,16 @@
 	margin: 0;
 	padding: 0;
 }
+
+/* Mobile: stack radio buttons vertically */
+@media (max-width: 600px) {
+	.map-metric {
+		flex-direction: column;
+		align-items: flex-start; /* left align text */
+		gap: 4px; /* tighter spacing */
+	}
+}
+
 .map-metric legend {
 	font-weight: 600;
 	margin-right: 6px;

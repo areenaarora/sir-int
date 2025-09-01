@@ -481,6 +481,12 @@ th .sort {
 	.hero__inner {
 		padding-top: 56px;
 	}
+
+	#pagination #pageInfo {
+		font-size: 10px;
+		line-height: 1.2;
+	}
+
 	.frow {
 		grid-template-columns: 1fr; /* one column */
 		grid-template-rows: auto auto auto auto; /* 3 fields + x */
