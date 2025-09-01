@@ -83,11 +83,34 @@
 	display: block;
 }
 
-/* Bigger map on mobile */
+/* Bigger, tighter map on mobile */
 @media (max-width: 768px) {
+	#mapCard {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	#mapCard .map-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50vh; /* smaller than before */
+	}
 	#mapCard #biharMap {
-		height: 100vh !important;
-		max-height: none !important;
+		width: 100% !important;
+		height: auto !important;
+		max-height: 100vh !important; /* cap height */
+	}
+
+	#mapTooltip {
+		position: absolute !important;
+		right: 12px !important;
+		top: 8px !important;
+		left: auto !important;
+		bottom: auto !important;
+		transform: none !important;
+		pointer-events: none;
+		z-index: 5; /* over the SVG */
+		max-width: 82vw; /* keep it readable on small phones */
 	}
 }
 

@@ -1,4 +1,6 @@
-/* ----- HERO (single light style) ----- */
+/* ==============================
+   HERO (single light style)
+   ============================== */
 .hero {
 	background: #fff;
 	color: #111;
@@ -52,47 +54,41 @@
 	transform: translateY(-1px);
 }
 
-/* === Make toggle pills match "Jump to table" === */
+/* Toggle pills match "Jump to table" */
 .view-toggle {
-	/* set once; everything below uses currentColor like .hero__cta */
-	color: #1a56db; /* same blue as links/Jump CTA */
+	color: #1a56db;
 }
-
 .view-toggle .btn {
-	/* mirror .hero__cta */
 	display: inline-block;
 	text-decoration: none;
-	border: 2px solid currentColor; /* outline like Jump CTA */
+	border: 2px solid currentColor;
 	background: #fff;
-	color: inherit; /* use the blue from .view-toggle */
+	color: inherit;
 	padding: 10px 14px;
 	border-radius: 999px;
 	font-weight: 600;
 	line-height: 1;
-	box-shadow: none; /* remove previous button look */
+	box-shadow: none;
 	transition: transform 0.15s ease;
 }
-
 .view-toggle .btn:hover,
 .view-toggle .btn:focus {
 	transform: translateY(-1px);
 }
-
-/* keep active state as outline (not filled) */
 .view-toggle .btn.is-active {
 	background: #fff;
 	color: inherit;
 	border-color: currentColor;
 }
-
-/* kill older ghost styles inside the toggle */
 .view-toggle .btn.btn--ghost {
 	border-color: currentColor;
 }
 
-/* ----- Intro block (below hero) ----- */
+/* ==============================
+   INTRO BLOCK
+   ============================== */
 .intro-block {
-	--intro-bg: #ffffff;
+	--intro-bg: #fff;
 	--intro-border: #e5e7eb;
 	--intro-text: #303030;
 	max-width: 1100px;
@@ -117,29 +113,25 @@
 .intro-block b {
 	font-weight: 700;
 }
-@media (max-width: 540px) {
-	.intro-block {
-		margin: 14px 12px 26px;
-	}
-}
 
-/* ---------- Global ---------- */
+/* ==============================
+   GLOBAL / LAYOUT
+   ============================== */
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
 
-/* ---------- Layout (left rail = toggle + columns; right rail = builder + map/table) ---------- */
 .layout {
 	max-width: 1544px;
 	margin: 0 auto;
-	padding: 0 64px 40px; /* equal gutters */
+	padding: 0 64px 40px;
 	display: grid;
 	grid-template-columns: 340px 1fr;
 	gap: 24px;
 	align-items: start;
-	overflow-x: clip; /* prevent right overflow */
+	overflow-x: clip;
 }
 .left-rail {
 	position: sticky;
@@ -150,14 +142,14 @@
 	gap: 12px;
 }
 .right-rail {
-	grid-column: 2 / 3; /* end at grid edge -> keeps right gutter equal */
+	grid-column: 2/3;
 	display: flex;
 	flex-direction: column;
 	gap: 0;
-	min-width: 0; /* allow shrinking */
+	min-width: 0;
 }
 
-/* ---------- View toggle ---------- */
+/* Buttons (generic) */
 .view-toggle {
 	display: flex;
 	gap: 0.5rem;
@@ -179,7 +171,9 @@
 	border-color: #111;
 }
 
-/* ---------- Column picker ---------- */
+/* ==============================
+   LEFT RAIL: COLUMN PICKER
+   ============================== */
 .filters {
 	background: #fff;
 	border: 1px solid #e6e6e6;
@@ -212,7 +206,9 @@
 	height: 16px;
 }
 
-/* ---------- Query Builder ---------- */
+/* ==============================
+   QUERY BUILDER
+   ============================== */
 .query-builder {
 	background: #fff;
 	border: 1px solid #e6e6e6;
@@ -224,9 +220,11 @@
 	gap: 8px;
 	margin-top: 4px;
 }
+
+/* Desktop grid: [field] [op] [value] [x] */
 .frow {
 	display: grid;
-	grid-template-columns: minmax(0, 140px) 110px minmax(0, 1fr) 34px;
+	grid-template-columns: minmax(0, 270px) 80px minmax(0, 1fr) 50px;
 	gap: 6px;
 	align-items: center;
 }
@@ -248,13 +246,16 @@
 	background: #fafafa;
 	border-radius: 6px;
 }
+
 .filters__actions {
 	display: flex;
 	gap: 8px;
 	margin-top: 12px;
 }
 
-/* ---------- Map card ---------- */
+/* ==============================
+   MAP + TABLE WRAPPERS
+   ============================== */
 .map-card {
 	background: #fff;
 	border: 1px solid #e6e6e6;
@@ -270,7 +271,6 @@
 	display: none !important;
 }
 
-/* ---------- Table card ---------- */
 .table-card .table-wrap {
 	background: #fff;
 	border: 1px solid #e6e6e6;
@@ -293,7 +293,9 @@
 	align-items: center;
 }
 
-/* ---------- Table ---------- */
+/* ==============================
+   TABLE
+   ============================== */
 #results {
 	width: max-content;
 	min-width: 100%;
@@ -332,19 +334,18 @@ th .sort {
 	align-items: center;
 }
 
-/* ---------- Pre-table section wrapper ---------- */
+/* ==============================
+   PRE-TABLE SECTION + AI2HTML
+   ============================== */
 .layout.layout--pretable {
 	padding-bottom: 0;
 }
 
-/* ---------- Two-column explainer + ai2html map ---------- */
-/* Center the block like intro/credits */
 .map-2col {
 	max-width: 1100px;
 	margin: 0 auto 36px;
 	padding: 0 24px;
 }
-/* Rebalance columns so the map sits a bit left */
 .map-2col__grid {
 	display: grid;
 	grid-template-columns: 560px 1fr;
@@ -360,7 +361,7 @@ th .sort {
 	width: 100%;
 }
 
-/* Keep ai2html from auto-centering; ensure responsiveness */
+/* ai2html hardening */
 .map-2col__viz #g-18-29_svg-box,
 .map-2col__viz #g-18-29_svg-box .g-artboard {
 	margin: 0 !important;
@@ -373,29 +374,37 @@ th .sort {
 	height: auto !important;
 }
 
-@media (max-width: 1280px) {
-	.map-2col__grid {
-		grid-template-columns: 480px 1fr;
-	}
+#g-18-29_svg-Artboard_1 {
+	width: 100% !important;
+	max-width: 100% !important;
+	max-height: none !important;
 }
-@media (max-width: 1100px) {
-	.map-2col__grid {
-		grid-template-columns: 440px 1fr;
-	}
+.map-2col__viz #g-18-29_svg-Artboard_1 {
+	width: 100% !important;
 }
-@media (max-width: 800px) {
-	.map-2col {
-		padding: 0 16px;
-	}
-	.map-2col__grid {
-		grid-template-columns: 1fr;
-	}
-	.map-2col__viz {
-		justify-self: start;
-	}
+.map-2col__viz #g-18-29_svg-Artboard_1 > div[style^="padding"] {
+	display: none !important;
+}
+.map-2col__viz #g-18-29_svg-box .g-aiImg {
+	position: static !important;
+	top: auto !important;
+	display: block !important;
+	width: 100% !important;
+	height: auto !important;
 }
 
-/* --- Credits block --- */
+/* Make the pre-table section full width (no empty left rail) */
+.layout.layout--pretable {
+	grid-template-columns: 1fr;
+	gap: 0;
+}
+.layout.layout--pretable .right-rail {
+	grid-column: 1 / -1;
+}
+
+/* ==============================
+   CREDITS
+   ============================== */
 .credits {
 	background: #fff;
 	color: #111;
@@ -421,7 +430,25 @@ th .sort {
 	margin: 0;
 }
 
-/* ---------- Responsive (global) ---------- */
+/* ==============================
+   RESPONSIVE (grouped)
+   ============================== */
+
+/* ≤1280px: rebalance explainer columns */
+@media (max-width: 1280px) {
+	.map-2col__grid {
+		grid-template-columns: 480px 1fr;
+	}
+}
+
+/* ≤1100px: rebalance again */
+@media (max-width: 1100px) {
+	.map-2col__grid {
+		grid-template-columns: 440px 1fr;
+	}
+}
+
+/* ≤960px: collapse main grid */
 @media (max-width: 960px) {
 	.layout {
 		grid-template-columns: 1fr;
@@ -436,44 +463,52 @@ th .sort {
 	}
 }
 
-#g-18-29_svg-Artboard_1 {
-	width: 100% !important;
-	max-width: 100% !important;
-	max-height: none !important;
-}
-
-/* ---- ai2html: robust fallback so the map never collapses on desktop ---- */
-.map-2col__viz #g-18-29_svg-Artboard_1 {
-	width: 100% !important; /* give the artboard a definite width */
-}
-
-/* hide the padding shim (we'll size from the image itself) */
-.map-2col__viz #g-18-29_svg-Artboard_1 > div[style^="padding"] {
-	display: none !important;
-}
-
-/* make the exported PNG flow normally (not absolute) */
-.map-2col__viz #g-18-29_svg-box .g-aiImg {
-	position: static !important;
-	top: auto !important;
-	display: block !important;
-	width: 100% !important;
-	height: auto !important;
-}
-
-/* Make the pre-table section full width (no empty left rail) */
-.layout.layout--pretable {
-	grid-template-columns: 1fr; /* single column here */
-	gap: 0; /* optional: remove the grid gap */
-}
-
-.layout.layout--pretable .right-rail {
-	grid-column: 1 / -1; /* span the whole row */
-}
-
-@media (min-width: 1200px) {
-	/* Was 520px 1fr — shrink the text column so the map grows */
+/* ≤800px: single-column explainer */
+@media (max-width: 800px) {
+	.map-2col {
+		padding: 0 16px;
+	}
 	.map-2col__grid {
-		grid-template-columns: 400px minmax(0, 1fr);
+		grid-template-columns: 1fr;
+	}
+	.map-2col__viz {
+		justify-self: start;
+	}
+}
+
+/* ≤600px: query-builder stacks; "x" comes after all three fields */
+@media (max-width: 600px) {
+	.hero__inner {
+		padding-top: 56px;
+	}
+	.frow {
+		grid-template-columns: 1fr; /* one column */
+		grid-template-rows: auto auto auto auto; /* 3 fields + x */
+		gap: 8px;
+	}
+	/* 1) field, 2) operator, 3) value — each full width */
+	.frow > *:nth-child(1) {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.frow > *:nth-child(2) {
+		grid-column: 1;
+		grid-row: 2;
+	}
+	.frow > *:nth-child(3) {
+		grid-column: 1;
+		grid-row: 3;
+	}
+	/* 4) close button at the end, right-aligned */
+	.frow > *:nth-child(4) {
+		grid-column: 1;
+		grid-row: 4;
+		justify-self: end;
+		width: auto; /* let intrinsic width define it */
+	}
+
+	/* Intro block margin tighter on small phones */
+	.intro-block {
+		margin: 14px 12px 26px;
 	}
 }
