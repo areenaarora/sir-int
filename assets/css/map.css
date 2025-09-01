@@ -241,3 +241,32 @@
 .map-note__text p {
 	margin: 0 0 8px;
 }
+
+/* Ensure the toolbar & Reset button sit above the SVG on mobile */
+.map-toolbar,
+#mapReset {
+	position: relative;
+	z-index: 3; /* above #biharMap */
+	pointer-events: auto;
+	-webkit-tap-highlight-color: transparent;
+	touch-action: manipulation;
+}
+
+/* Keep the SVG below */
+#biharMap {
+	position: relative;
+	z-index: 1;
+}
+
+/* If your toolbar overlaps the map, make sure it paints over it */
+.map-toolbar {
+	background: #fff; /* optional, helps with overlap */
+}
+
+/* (Optional) slightly larger tap target on small screens */
+@media (max-width: 768px) {
+	#mapReset {
+		min-height: 38px;
+		padding: 8px 12px;
+	}
+}

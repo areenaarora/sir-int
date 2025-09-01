@@ -81,6 +81,14 @@
 		};
 		if (sel.svg.empty()) return;
 
+		// ---- helper: dispatch change for iOS programmatic resets
+		function fireChange(d3sel) {
+			if (!d3sel || typeof d3sel.node !== "function") return;
+			const node = d3sel.node();
+			if (!node) return;
+			node.dispatchEvent(new Event("change", { bubbles: true }));
+		}
+
 		// Defaults; real size set by measureAndResize()
 		const state = {
 			metric: "total",
@@ -253,15 +261,26 @@
 				state.ageGroup = e.target.value;
 				update();
 			});
-			sel.reset.on("click", () => {
+
+			// UPDATED reset handler (iOS-safe)
+			sel.reset.on("click", e => {
+				e.preventDefault();
+
+				// Reset state
 				state.metric = "total";
-				d3.select('input[name="metric"][value="total"]').property("checked", true);
 				state.reason = "All reasons";
+				if (state.hasAge) state.ageGroup = "All age groups";
+
+				// Reset UI
+				d3.select('input[name="metric"][value="total"]').property("checked", true);
 				sel.reason.property("value", state.reason);
-				if (state.hasAge) {
-					state.ageGroup = "All age groups";
-					sel.age.property("value", state.ageGroup);
-				}
+				if (state.hasAge) sel.age.property("value", state.ageGroup);
+
+				// iOS Safari: programmatic .value does not emit "change"
+				fireChange(sel.reason);
+				if (state.hasAge) fireChange(sel.age);
+
+				// Re-render
 				update();
 			});
 
