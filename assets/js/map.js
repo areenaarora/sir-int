@@ -223,8 +223,21 @@
 				.join("path")
 				.attr("d", path)
 				.attr("fill", "#f3f4f6")
+
+				// NEW: add/remove highlight and show tip on enter
+				.on("mouseenter", function (event, f) {
+					d3.select(this).classed("is-hover", true).raise();
+					showTip(event, f);
+				})
+
+				// keep tooltip following the cursor
 				.on("mousemove", (event, f) => showTip(event, f))
-				.on("mouseleave", hideTip);
+
+				// NEW: clear highlight + hide tip on leave
+				.on("mouseleave", function () {
+					d3.select(this).classed("is-hover", false);
+					hideTip();
+				});
 		}
 
 		function wireEvents() {
